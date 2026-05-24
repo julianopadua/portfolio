@@ -182,18 +182,4 @@ export const projects: ProjectItem[] = [
     },
     featured: true,
   },
-  {
-    id: 'data-automation-project',
-    name: { pt: 'Automações de dados', en: 'Data automation' },
-    shortDescription: {
-      pt: 'Pipelines e scripts para coleta, limpeza e relatórios.',
-      en: 'Pipelines and scripts for collection, cleaning, and reporting.',
-    },
-    stack: ['Python', 'SQL', 'Excel/VBA'],
-    status: 'active',
-    tags: ['automation', 'data'],
-    links: {
-      repository: 'https://github.com/julianopadua',
-    },
-  },
 ]

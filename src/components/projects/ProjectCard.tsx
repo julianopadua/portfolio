@@ -108,7 +108,7 @@ export function ProjectCard({ project, variant = 'default' }: ProjectCardProps) 
         </ul>
       )}
       <div className="mt-4 flex flex-wrap gap-4 text-sm">
-        {project.links.demo && (
+        {project.links.demo && !preview && (
           <a
             href={project.links.demo}
             target="_blank"
