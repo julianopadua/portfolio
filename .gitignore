@@ -8,6 +8,7 @@ MEMORY.md
 SECURITY.md
 ARCHITECTURE.md
 CONTRIBUTING.md
+USER_GUIDE.md
 .agent/
 .cursor/
 plans/

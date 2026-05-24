@@ -149,8 +149,8 @@ export const projects: ProjectItem[] = [
     id: 'instituto-forest',
     name: { pt: 'Instituto Forest', en: 'Instituto Forest' },
     shortDescription: {
-      pt: 'Portal de dados abertos para decisões reais — catálogo público, API de metadados e relatórios analíticos.',
-      en: 'Open data portal for real-world decisions — public catalog, metadata API, and analytical reports.',
+      pt: 'Portal de dados abertos para decisões reais - catálogo público, API de metadados e relatórios analíticos.',
+      en: 'Open data portal for real-world decisions - public catalog, metadata API, and analytical reports.',
     },
     longDescription: {
       pt: 'Ecossistema open source: portal (front-end e orquestração de URLs oficiais), pipelines Python com SDK forest-data, automação de conteúdo para redes sociais e geração de relatórios.',
@@ -158,7 +158,7 @@ export const projects: ProjectItem[] = [
     },
     stack: ['Next.js', 'TypeScript', 'Python', 'Open Data', 'Supabase'],
     status: 'active',
-    period: '2025 – today',
+    period: '2025 - today',
     tags: ['open-data', 'environment', 'open-source'],
     hero: true,
     sitePreview: {

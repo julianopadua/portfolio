@@ -1,4 +1,4 @@
-/* CV document — Victor-style A4 layout (screen + print base) */
+/* CV document - Victor-style A4 layout (screen + print base) */
 
 .cv-page {
   padding: 0;
@@ -502,7 +502,7 @@
   page-break-inside: avoid;
 }
 
-/* Responsivo só no embed da página — NÃO na impressão (210mm < 820px) */
+/* Responsivo só no embed da página - NÃO na impressão (210mm < 820px) */
 @media (max-width: 820px) {
   .cv-page {
     padding: 1rem;

@@ -181,7 +181,7 @@
     page-break-inside: avoid;
   }
 
-  /* Idiomas/certificações podem quebrar linha — evita empurrar bloco inteiro */
+  /* Idiomas/certificações podem quebrar linha - evita empurrar bloco inteiro */
   .cv-document--print .cv-language,
   .cv-document--print .cv-compact,
   .cv-document--print .cv-edu-item,

@@ -18,7 +18,7 @@ export function LanguageRating({ languages }: LanguageRatingProps) {
           <span>
             {pickLocalized(lang.language, locale)}
             {lang.levelLabel && (
-              <span className="cv-language__level"> — {pickLocalized(lang.levelLabel, locale)}</span>
+              <span className="cv-language__level"> - {pickLocalized(lang.levelLabel, locale)}</span>
             )}
           </span>
           <div className="cv-language__dots" aria-hidden>

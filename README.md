@@ -9,7 +9,7 @@ Minimalist personal portfolio.
 | Runtime | **React 19** | UI components and client-side routing |
 | Language | **TypeScript** | Typed data models and components |
 | Build | **Vite 8** | Dev server, HMR, and production static output |
-| Routing | **react-router-dom 7** | `/about`, `/cv`, `/projects` with `basename` for GitHub Pages |
+| Routing | **react-router-dom 7** | `/#/about`, `/#/cv`, `/#/projects` with `HashRouter` for GitHub Pages |
 | Styling | **Tailwind CSS 4** | Utility-first layout and theme via `@tailwindcss/vite` |
 | Icons | **lucide-react** | Consistent icon set |
 | Lint | **ESLint** + **typescript-eslint** | Project-wide checks |
@@ -23,8 +23,8 @@ Print-friendly CV styling uses a dedicated `print.css` and browser print-to-PDF 
 ```bash
 npm install
 npm run dev       # http://localhost:5173
-npm run build     # output: dist/ (includes 404.html for GitHub Pages SPA)
+npm run build     # output: dist/
 npm run preview   # serve production build locally
+npm run deploy    # publish dist/ to the gh-pages branch
 npm run lint
 ```
-

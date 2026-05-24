@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AppLayout } from './components/layout/AppLayout'
 import { LocaleProvider } from './i18n/LocaleProvider'
 import { AboutPage } from './pages/AboutPage'
@@ -8,7 +8,7 @@ import { ProjectsPage } from './pages/ProjectsPage'
 export default function App() {
   return (
     <LocaleProvider>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <HashRouter>
         <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<Navigate to="about" replace />} />
@@ -18,7 +18,7 @@ export default function App() {
             <Route path="*" element={<Navigate to="about" replace />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </LocaleProvider>
   )
 }

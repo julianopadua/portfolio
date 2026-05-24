@@ -27,7 +27,7 @@ export const cvDocument: CvDocumentData = {
       id: 'incomm',
       company: 'InComm Payments',
       location: { pt: 'Remoto', en: 'Remote' },
-      period: { pt: 'Nov 2025 – Atual', en: 'Nov 2025 – Present' },
+      period: { pt: 'Nov 2025 - Atual', en: 'Nov 2025 - Present' },
       roles: [
         {
           title: {
@@ -60,7 +60,7 @@ export const cvDocument: CvDocumentData = {
       company: 'HedgePoint Global Markets',
       href: 'https://hedgepointglobal.com/',
       location: { pt: 'Campinas, Brasil', en: 'Campinas, Brazil' },
-      period: { pt: 'Set 2024 – Mar 2025', en: 'Sep 2024 – Mar 2025' },
+      period: { pt: 'Set 2024 - Mar 2025', en: 'Sep 2024 - Mar 2025' },
       roles: [
         {
           title: {
@@ -92,14 +92,14 @@ export const cvDocument: CvDocumentData = {
       company: 'Leadfy Imob',
       href: 'https://leadfy-imob.com.br/',
       title: { pt: 'Estagiário de Suporte Técnico', en: 'Technical Support Intern' },
-      period: { pt: 'Mai 2024 – Set 2024', en: 'May 2024 – Sep 2024' },
+      period: { pt: 'Mai 2024 - Set 2024', en: 'May 2024 - Sep 2024' },
       location: { pt: 'Remoto', en: 'Remote' },
     },
     {
       id: 'maricondi',
       company: 'Laboratório Maricondi',
       title: { pt: 'Estagiário de Projetos', en: 'Projects Intern' },
-      period: { pt: 'Set 2025 – Nov 2025', en: 'Sep 2025 – Nov 2025' },
+      period: { pt: 'Set 2025 - Nov 2025', en: 'Sep 2025 - Nov 2025' },
       location: { pt: 'São Carlos, SP', en: 'São Carlos, SP' },
     },
     {
@@ -109,7 +109,7 @@ export const cvDocument: CvDocumentData = {
         pt: 'Líder de Projeto',
         en: 'Project Leader',
       },
-      period: { pt: 'Set 2025 – Atual', en: 'Sep 2025 – Present' },
+      period: { pt: 'Set 2025 - Atual', en: 'Sep 2025 - Present' },
       location: { pt: 'UFSCar · São Carlos, SP', en: 'UFSCar · São Carlos, SP' },
     },
     {
@@ -119,7 +119,7 @@ export const cvDocument: CvDocumentData = {
         pt: 'Diretor de Projetos e Tutor de Redes Neurais',
         en: 'Projects Director and Neural Networks Tutor',
       },
-      period: { pt: 'Set 2025 – Atual', en: 'Sep 2025 – Present' },
+      period: { pt: 'Set 2025 - Atual', en: 'Sep 2025 - Present' },
       location: { pt: 'São Carlos, SP', en: 'São Carlos, SP' },
     },
   ],
@@ -167,7 +167,7 @@ export const cvDocument: CvDocumentData = {
         pt: 'Universidade Federal de São Carlos (UFSCar)',
         en: 'Federal University of São Carlos (UFSCar)',
       },
-      period: { pt: 'Ago 2021 – Jul 2026', en: 'Aug 2021 – Jul 2026' },
+      period: { pt: 'Ago 2021 - Jul 2026', en: 'Aug 2021 - Jul 2026' },
       location: { pt: 'São Carlos, SP', en: 'São Carlos, SP' },
       href: 'https://www.ufscar.br/',
     },
@@ -181,7 +181,7 @@ export const cvDocument: CvDocumentData = {
         en: 'Python, Data Science, Machine Learning, SQL/PostgreSQL, Power BI, Excel and VBA',
       },
       issuer: { pt: 'Alura', en: 'Alura' },
-      period: { pt: '2023 – 2025', en: '2023 – 2025' },
+      period: { pt: '2023 - 2025', en: '2023 - 2025' },
     },
     {
       id: 'udemy-git',
@@ -196,7 +196,7 @@ export const cvDocument: CvDocumentData = {
         en: 'Hedging, Basis, Fundamental Analysis and Coffee Hedging',
       },
       issuer: { pt: 'Hedgepoint Academy', en: 'Hedgepoint Academy' },
-      period: { pt: '2024 – 2025', en: '2024 – 2025' },
+      period: { pt: '2024 - 2025', en: '2024 - 2025' },
     },
   ],
 
@@ -205,7 +205,7 @@ export const cvDocument: CvDocumentData = {
       id: 'all-juice',
       organization: { pt: 'All Juice Capital', en: 'All Juice Capital' },
       role: { pt: 'Desenvolvedor voluntário', en: 'Volunteer Developer' },
-      period: { pt: 'Mai 2025 – Set 2025', en: 'May 2025 – Sep 2025' },
+      period: { pt: 'Mai 2025 - Set 2025', en: 'May 2025 - Sep 2025' },
       location: { pt: 'Remoto · Reino Unido', en: 'Remote · United Kingdom' },
       href: 'https://www.alljuicecapital.com/',
       bullets: [
@@ -267,8 +267,8 @@ export const cvDocument: CvDocumentData = {
     {
       id: 'tcc-cerrado',
       title: {
-        pt: 'TCC em Machine Learning — nota máxima',
-        en: 'Undergraduate thesis in Machine Learning — top grade',
+        pt: 'TCC em Machine Learning - nota máxima',
+        en: 'Undergraduate thesis in Machine Learning - top grade',
       },
       organization: { pt: 'UFSCar', en: 'UFSCar' },
       description: {
@@ -280,8 +280,8 @@ export const cvDocument: CvDocumentData = {
     {
       id: 'instituto-forest',
       title: {
-        pt: 'Instituto Forest — ecossistema open source',
-        en: 'Instituto Forest — open source ecosystem',
+        pt: 'Instituto Forest - ecossistema open source',
+        en: 'Instituto Forest - open source ecosystem',
       },
       organization: { pt: 'Instituto Forest', en: 'Instituto Forest' },
       description: {
