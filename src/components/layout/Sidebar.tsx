@@ -21,7 +21,7 @@ export function Sidebar() {
         <img
           src={publicAsset('imgs/new-img.png')}
           alt={profile.name}
-          className="mb-4 h-36 w-36 rounded-full border border-[var(--color-border)] object-cover"
+          className="mb-4 h-36 w-36 rounded-full border border-[var(--color-border)] object-cover object-[center_28%]"
           width={144}
           height={144}
         />

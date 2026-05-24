@@ -1,5 +1,5 @@
 import { timelineEvents } from '../../data/timeline'
-import type { TimelineEvent, TimelineKind } from '../../data/types'
+import type { TimelineEvent } from '../../data/types'
 import { publicAsset } from '../../lib/assets'
 import { pickLocalized } from '../../lib/localized'
 import { sortByStartAsc } from '../../lib/sort'
@@ -11,15 +11,12 @@ function formatPeriod(event: TimelineEvent, locale: 'pt' | 'en'): string {
   if (event.displayPeriod) {
     return pickLocalized(event.displayPeriod, locale)
   }
-  if (event.end) return `${event.start} - ${event.end}`
   return event.start
 }
 
 export function Timeline() {
   const { locale, t } = useLocale()
   const events = sortByStartAsc(timelineEvents)
-
-  const kindLabel = (kind: TimelineKind) => t.timeline.kinds[kind]
 
   return (
     <section className="mt-12" aria-labelledby="timeline-heading">
@@ -57,12 +54,11 @@ export function Timeline() {
                     >
                       {period}
                     </time>
-                    <Tag variant="muted">{kindLabel(event.kind)}</Tag>
                     {event.placeholder && (
                       <Tag variant="muted">{t.about.placeholder}</Tag>
                     )}
                   </div>
-                  <h3 className="mt-1 font-serif text-lg font-semibold">
+                  <h3 className="mt-1 font-serif text-lg font-normal leading-snug text-[var(--color-ink)]">
                     {event.href ? (
                       <a
                         href={event.href}
@@ -76,8 +72,10 @@ export function Timeline() {
                       title
                     )}
                   </h3>
-                  {org && <p className="text-sm text-[var(--color-muted)]">{org}</p>}
-                  <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink)]">{summary}</p>
+                  {org && (
+                    <p className="mt-1 text-sm font-medium text-[var(--color-muted)]">{org}</p>
+                  )}
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--color-muted)]">{summary}</p>
                   {event.tags && event.tags.length > 0 && (
                     <ul className="mt-2 flex flex-wrap gap-1.5" aria-label="Tags">
                       {event.tags.map((tag) => (
