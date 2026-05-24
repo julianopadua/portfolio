@@ -23,17 +23,31 @@ export function CvDocument({ variant, id, className = '' }: CvDocumentProps) {
       data-cv-variant={variant}
     >
       <div className="cv-page-sheet cv-page-sheet--1">
+        <div className="cv-page-sheet__content">
+          {isPrint && (
+            <>
+              <CvHeader profile={cvDocument.profile} />
+              <p className="cv-summary">{pickLocalized(cvDocument.profile.summary, locale)}</p>
+            </>
+          )}
+          <CvDocumentBodyPage1 />
+        </div>
         {isPrint && (
-          <>
-            <CvHeader profile={cvDocument.profile} />
-            <p className="cv-summary">{pickLocalized(cvDocument.profile.summary, locale)}</p>
-          </>
+          <footer className="cv-page-footer" aria-hidden>
+            1
+          </footer>
         )}
-        <CvDocumentBodyPage1 />
       </div>
 
       <div className="cv-page-sheet cv-page-sheet--2">
-        <CvDocumentBodyPage2 />
+        <div className="cv-page-sheet__content">
+          <CvDocumentBodyPage2 />
+        </div>
+        {isPrint && (
+          <footer className="cv-page-footer" aria-hidden>
+            2
+          </footer>
+        )}
       </div>
     </div>
   )

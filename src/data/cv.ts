@@ -47,6 +47,10 @@ export const cvDocument: CvDocumentData = {
               pt: 'Colaboração com equipes de negócio e tecnologia em fluxos de investigação e documentação de casos.',
               en: 'Collaborated with business and technology teams on investigation workflows and case documentation.',
             },
+            {
+              pt: 'Automações de procedimentos operacionais para amenizar a carga de trabalho própria e de colegas analistas.',
+              en: 'Automated operational procedures to reduce workload for myself and fellow analyst colleagues.',
+            },
           ],
         },
       ],
@@ -65,8 +69,8 @@ export const cvDocument: CvDocumentData = {
           },
           bullets: [
             {
-              pt: 'Automação de relatórios e análises com Python, SQL, Excel e VBA para insights em mercados de commodities.',
-              en: 'Automated reporting and analysis with Python, SQL, Excel, and VBA for commodities market insights.',
+              pt: 'Criação de relatórios automatizados end-to-end com geração de conteúdo em PDF, utilizando fluxos com LLMs embutidas (Python, SQL, Excel e VBA).',
+              en: 'Built end-to-end automated reports with PDF content generation using workflows with embedded LLMs (Python, SQL, Excel, and VBA).',
             },
             {
               pt: 'Construção de fluxos reutilizáveis e referência técnica entre TI e Inteligência de Mercado.',

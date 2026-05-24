@@ -60,13 +60,32 @@
   }
 
   .cv-document--print .cv-page-sheet {
+    display: flex !important;
+    flex-direction: column !important;
     width: 210mm !important;
     max-width: 210mm !important;
-    min-height: auto !important;
+    min-height: 297mm !important;
     height: auto !important;
-    padding: 10mm 11mm !important;
+    padding: 10mm 11mm 0 !important;
     box-sizing: border-box !important;
     overflow: visible !important;
+  }
+
+  .cv-document--print .cv-page-sheet__content {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+  }
+
+  .cv-document--print .cv-page-footer {
+    flex-shrink: 0 !important;
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+    padding: 0 0 2mm !important;
+    text-align: center !important;
+    font-size: 8pt !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    color: #222222 !important;
   }
 
   .cv-document--print .cv-page-sheet--1 {
