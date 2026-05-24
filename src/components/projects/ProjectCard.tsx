@@ -72,6 +72,17 @@ export function ProjectCard({ project }: ProjectCardProps) {
             {t.projects.viewDemo}
           </a>
         )}
+        {project.links.other?.map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="uppercase tracking-widest text-[var(--color-accent)] hover:underline"
+          >
+            {pickLocalized(link.label, locale)}
+          </a>
+        ))}
       </div>
     </Card>
   )

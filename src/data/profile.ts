@@ -16,12 +16,12 @@ export const profile: Profile = {
       en: 'At UFSCar, I served as a Teaching Assistant for Introduction to Computing, a tutor for Analytic Geometry, Project Leader for the IntegraLab project (Whirlpool + UFSCar), and Neural Networks tutor at the PANDA projects directorate.',
     },
     {
-      pt: 'Profissionalmente, estagiei na Leadfy Imob, na HedgePoint Global Markets e no Laboratório Maricondi; atuei como desenvolvedor full-stack na All Juice Capital. Atualmente sou estagiário em Fraud Business Analytics na InComm Payments, em ambiente internacional.',
-      en: 'Professionally, I interned at Leadfy Imob, HedgePoint Global Markets, and Laboratório Maricondi; worked as a full-stack developer at All Juice Capital. I am currently a Fraud Business Analytics Intern at InComm Payments in an English-only environment.',
+      pt: 'Profissionalmente, estagiei na Leadfy Imob, na HedgePoint Global Markets e no Laboratório Maricondi; atuei como desenvolvedor voluntário na All Juice Capital. Atualmente sou estagiário em Fraud Business Analytics na InComm Payments, em ambiente internacional.',
+      en: 'Professionally, I interned at Leadfy Imob, HedgePoint Global Markets, and Laboratório Maricondi; volunteered as a developer at All Juice Capital. I am currently a Fraud Business Analytics Intern at InComm Payments in an English-only environment.',
     },
     {
-      pt: 'Domino Python, SQL, Power BI, pipelines de dados e ferramentas de analytics; busco aplicar engenharia e dados em contextos financeiros, de mercado e de prevenção a fraudes.',
-      en: 'I work with Python, SQL, Power BI, data pipelines, and analytics tools; I aim to apply engineering and data skills in finance, markets, and fraud prevention contexts.',
+      pt: 'Defendi em mar/2026 meu TCC sobre previsão de focos de incêndio no Cerrado com machine learning (UFSCar). Atuo no IntegraLab com Whirlpool em soluções IoT e sigo no PANDA como tutor de Redes Neurais.',
+      en: 'In Mar 2026 I defended my undergraduate thesis on Cerrado fire hotspot prediction with machine learning (UFSCar). I work on IntegraLab with Whirlpool on IoT solutions and continue at PANDA as a Neural Networks tutor.',
     },
   ],
   location: {

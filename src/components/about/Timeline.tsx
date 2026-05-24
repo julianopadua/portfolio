@@ -1,19 +1,23 @@
 import { timelineEvents } from '../../data/timeline'
-import type { TimelineKind } from '../../data/types'
+import type { TimelineEvent, TimelineKind } from '../../data/types'
+import { publicAsset } from '../../lib/assets'
 import { pickLocalized } from '../../lib/localized'
-import { sortByStartDesc } from '../../lib/sort'
+import { sortByStartAsc } from '../../lib/sort'
 import { useLocale } from '../../i18n/useLocale'
 import { SectionTitle } from '../ui/SectionTitle'
 import { Tag } from '../ui/Tag'
 
-function formatPeriod(start: string, end?: string): string {
-  if (end) return `${start} - ${end}`
-  return start
+function formatPeriod(event: TimelineEvent, locale: 'pt' | 'en'): string {
+  if (event.displayPeriod) {
+    return pickLocalized(event.displayPeriod, locale)
+  }
+  if (event.end) return `${event.start} - ${event.end}`
+  return event.start
 }
 
 export function Timeline() {
   const { locale, t } = useLocale()
-  const events = sortByStartDesc(timelineEvents)
+  const events = sortByStartAsc(timelineEvents)
 
   const kindLabel = (kind: TimelineKind) => t.timeline.kinds[kind]
 
@@ -25,45 +29,66 @@ export function Timeline() {
           const title = pickLocalized(event.title, locale)
           const org = event.organization ? pickLocalized(event.organization, locale) : null
           const summary = pickLocalized(event.summary, locale)
+          const period = formatPeriod(event, locale)
 
           return (
             <li key={event.id} className="mb-8 ml-2 last:mb-0">
               <span
-                className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-[var(--color-border)] bg-white"
+                className={`absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-[var(--color-border)] bg-white ${event.logo ? 'opacity-40' : ''}`}
                 aria-hidden
               />
-              <div className="flex flex-wrap items-baseline gap-2">
-                <time
-                  className="text-xs uppercase tracking-widest text-[var(--color-muted)]"
-                  dateTime={event.start}
-                >
-                  {formatPeriod(event.start, event.end)}
-                </time>
-                <Tag variant="muted">{kindLabel(event.kind)}</Tag>
-                {event.placeholder && (
-                  <Tag variant="muted">{t.about.placeholder}</Tag>
+              <div className="flex gap-4">
+                {event.logo && (
+                  <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center">
+                    <img
+                      src={publicAsset(event.logo)}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="max-h-10 max-w-10 object-contain"
+                    />
+                  </div>
                 )}
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-baseline gap-2">
+                    <time
+                      className="text-xs uppercase tracking-widest text-[var(--color-muted)]"
+                      dateTime={event.start}
+                    >
+                      {period}
+                    </time>
+                    <Tag variant="muted">{kindLabel(event.kind)}</Tag>
+                    {event.placeholder && (
+                      <Tag variant="muted">{t.about.placeholder}</Tag>
+                    )}
+                  </div>
+                  <h3 className="mt-1 font-serif text-lg font-semibold">
+                    {event.href ? (
+                      <a
+                        href={event.href}
+                        className="hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {title}
+                      </a>
+                    ) : (
+                      title
+                    )}
+                  </h3>
+                  {org && <p className="text-sm text-[var(--color-muted)]">{org}</p>}
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink)]">{summary}</p>
+                  {event.tags && event.tags.length > 0 && (
+                    <ul className="mt-2 flex flex-wrap gap-1.5" aria-label="Tags">
+                      {event.tags.map((tag) => (
+                        <li key={tag}>
+                          <Tag>{tag}</Tag>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
-              <h3 className="mt-1 font-serif text-lg font-semibold">
-                {event.href ? (
-                  <a href={event.href} className="hover:underline" target="_blank" rel="noopener noreferrer">
-                    {title}
-                  </a>
-                ) : (
-                  title
-                )}
-              </h3>
-              {org && <p className="text-sm text-[var(--color-muted)]">{org}</p>}
-              <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink)]">{summary}</p>
-              {event.tags && event.tags.length > 0 && (
-                <ul className="mt-2 flex flex-wrap gap-1.5" aria-label="Tags">
-                  {event.tags.map((tag) => (
-                    <li key={tag}>
-                      <Tag>{tag}</Tag>
-                    </li>
-                  ))}
-                </ul>
-              )}
             </li>
           )
         })}

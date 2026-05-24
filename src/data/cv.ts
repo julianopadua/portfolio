@@ -45,16 +45,29 @@ export const cvEducation: CvEntry[] = [
     },
   },
   {
-    id: 'integralab-leader',
+    id: 'integralab-leader-2025',
     title: {
-      pt: 'Líder de projeto IntegraLab',
-      en: 'IntegraLab Project Leader',
+      pt: 'IntegraLab + Whirlpool',
+      en: 'IntegraLab + Whirlpool',
     },
-    organization: { pt: 'Whirlpool + UFSCar', en: 'Whirlpool + UFSCar' },
-    period: { pt: 'Set 2025 - Jul 2026', en: 'Sep 2025 - Jul 2026' },
+    organization: { pt: 'UFSCar + Whirlpool', en: 'UFSCar + Whirlpool' },
+    period: { pt: 'Set 2025 - Fev 2026', en: 'Sep 2025 - Feb 2026' },
     description: {
-      pt: 'Liderança do projeto acadêmico-industrial IntegraLab.',
-      en: 'Led the IntegraLab academic-industry project.',
+      pt: 'Projeto com IoT, front-end, back-end, análise e ciência de dados.',
+      en: 'Project with IoT, front-end, back-end, analytics, and data science.',
+    },
+  },
+  {
+    id: 'integralab-leader-2026',
+    title: {
+      pt: 'IntegraLab + Whirlpool (novo ciclo)',
+      en: 'IntegraLab + Whirlpool (new cycle)',
+    },
+    organization: { pt: 'UFSCar + Whirlpool', en: 'UFSCar + Whirlpool' },
+    period: { pt: 'Mar 2026 - Atual', en: 'Mar 2026 - Present' },
+    description: {
+      pt: 'Novo ciclo do projeto acadêmico-industrial IntegraLab.',
+      en: 'New cycle of the IntegraLab academic-industry project.',
     },
   },
   {
@@ -98,12 +111,12 @@ export const cvExperience: CvEntry[] = [
   },
   {
     id: 'all-juice',
-    title: { pt: 'Desenvolvedor Full-Stack', en: 'Full-Stack Developer' },
+    title: { pt: 'Desenvolvedor voluntário', en: 'Volunteer Developer' },
     organization: { pt: 'All Juice Capital', en: 'All Juice Capital' },
     period: { pt: 'Mai 2025 - Set 2025', en: 'May 2025 - Sep 2025' },
     description: {
-      pt: 'Desenvolvimento full-stack, pipelines de dados e automações para analytics de trading e ferramentas internas.',
-      en: 'Full-stack development, data pipelines, and automation for trading analytics and internal tools.',
+      pt: 'Desenvolvimento voluntário full-stack, pipelines de dados e suporte a trading systems.',
+      en: 'Volunteer full-stack development, data pipelines, and trading systems support.',
     },
     href: 'https://www.alljuicecapital.com/',
   },
@@ -141,27 +154,36 @@ export const cvResearch: CvEntry[] = [
   {
     id: 'tcc-cerrado',
     title: {
-      pt: 'TCC: previsão e ranking de focos de incêndio no Cerrado',
-      en: 'Thesis: fire hotspot prediction and ranking in the Cerrado',
+      pt: 'TCC: previsão de focos de incêndio no Cerrado com variáveis climáticas',
+      en: 'Thesis: Cerrado fire hotspot prediction using climate variables',
     },
     organization: { pt: 'UFSCar', en: 'UFSCar' },
-    period: { pt: 'Em andamento', en: 'In progress' },
+    period: { pt: 'Defesa em Mar 2026', en: 'Defended Mar 2026' },
     description: {
-      pt: 'Pesquisa aplicada em modelagem preditiva e análise espacial de focos de incêndio.',
-      en: 'Applied research on predictive modeling and spatial analysis of fire hotspots.',
+      pt: 'Comparativo de modelos de ML com dados INMET e BDQueimadas; feature engineering e tratamento de desbalanceamento.',
+      en: 'Comparative ML models with INMET data and INPE fire records; feature engineering and imbalance treatment.',
     },
-    placeholder: true,
+    href: 'https://repositorio.ufscar.br/items/969fd627-d894-40be-89fb-b20127ba3f03',
   },
 ]
 
 export const cvProjectsHighlight: CvEntry[] = [
   {
-    id: 'integralab-cv',
-    title: { pt: 'IntegraLab (Whirlpool + UFSCar)', en: 'IntegraLab (Whirlpool + UFSCar)' },
-    period: { pt: 'Set 2025 - Jul 2026', en: 'Sep 2025 - Jul 2026' },
+    id: 'integralab-cv-2025',
+    title: { pt: 'IntegraLab + Whirlpool', en: 'IntegraLab + Whirlpool' },
+    period: { pt: 'Set 2025 - Fev 2026', en: 'Sep 2025 - Feb 2026' },
     description: {
-      pt: 'Projeto acadêmico-industrial com liderança de equipe e entregas de engenharia.',
-      en: 'Academic-industry project with team leadership and engineering deliverables.',
+      pt: 'Soluções IoT com front-end, back-end, análise e ciência de dados.',
+      en: 'IoT solutions with front-end, back-end, analytics, and data science.',
+    },
+  },
+  {
+    id: 'integralab-cv-2026',
+    title: { pt: 'IntegraLab + Whirlpool (novo ciclo)', en: 'IntegraLab + Whirlpool (new cycle)' },
+    period: { pt: 'Mar 2026 - Atual', en: 'Mar 2026 - Present' },
+    description: {
+      pt: 'Novo ciclo do projeto acadêmico-industrial.',
+      en: 'New cycle of the academic-industry project.',
     },
   },
 ]

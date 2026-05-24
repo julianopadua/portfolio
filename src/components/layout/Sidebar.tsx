@@ -1,13 +1,14 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
-
-const socialIcons = {
-  github: `${import.meta.env.BASE_URL}icons/githubclaro.png`,
-  linkedin: `${import.meta.env.BASE_URL}icons/linkedinclaro.png`,
-  instagram: `${import.meta.env.BASE_URL}icons/instaclaro.png`,
-} as const
 import { profile } from '../../data/profile'
+import { publicAsset } from '../../lib/assets'
 import { pickLocalized } from '../../lib/localized'
 import { useLocale } from '../../i18n/useLocale'
+
+const socialIcons = {
+  github: publicAsset('icons/githubclaro.png'),
+  linkedin: publicAsset('icons/linkedinclaro.png'),
+  instagram: publicAsset('icons/instaclaro.png'),
+} as const
 
 export function Sidebar() {
   const { locale, t } = useLocale()
@@ -18,7 +19,7 @@ export function Sidebar() {
     <aside className="no-print lg:sticky lg:top-8 lg:self-start">
       <div className="flex flex-col items-center border border-[var(--color-border)] bg-white/50 p-6 text-center lg:items-start lg:text-left">
         <img
-          src={`${import.meta.env.BASE_URL}avatar.png`}
+          src={publicAsset('imgs/new-img.png')}
           alt={profile.name}
           className="mb-4 h-36 w-36 rounded-full border border-[var(--color-border)] object-cover"
           width={144}
