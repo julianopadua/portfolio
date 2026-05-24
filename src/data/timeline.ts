@@ -261,4 +261,23 @@ export const timelineEvents: TimelineEvent[] = [
     href: 'https://repositorio.ufscar.br/items/969fd627-d894-40be-89fb-b20127ba3f03',
     tags: ['machine-learning', 'cerrado', 'wildfire'],
   },
+  {
+    id: 'instituto-forest-alpha',
+    kind: 'release',
+    start: '2026-05',
+    sortOrder: 15,
+    logo: 'icons/forest-logo.png',
+    displayPeriod: { pt: 'Mai 2026', en: 'May 2026' },
+    title: {
+      pt: 'Lancei a versão alpha do Instituto Forest',
+      en: 'I launched the Instituto Forest alpha release',
+    },
+    organization: { pt: 'Instituto Forest', en: 'Instituto Forest' },
+    summary: {
+      pt: 'Portal em institutoforest.org com catálogo de dados abertos, API de metadados e ecossistema open source (forest-portal e forest-open-data-pipelines).',
+      en: 'Portal at institutoforest.org with an open data catalog, metadata API, and open-source ecosystem (forest-portal and forest-open-data-pipelines).',
+    },
+    href: 'https://institutoforest.org',
+    tags: ['open-data', 'environment', 'open-source'],
+  },
 ]

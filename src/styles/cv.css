@@ -1,28 +1,33 @@
 /* CV document — Victor-style A4 layout (screen + print base) */
 
 .cv-page {
-  background: #f3f3f3;
-  padding: 1.5rem 0 2.5rem;
+  padding: 0;
+  background: transparent;
 }
 
 .cv-document {
-  width: 210mm;
-  min-height: 297mm;
-  margin: 0 auto;
-  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  min-height: auto;
+  margin: 0;
+  background: transparent;
   color: #222222;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 9.2pt;
   line-height: 1.2;
   box-sizing: border-box;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
 }
 
 .cv-page-sheet {
   width: 100%;
-  min-height: 297mm;
-  padding: 11mm 12mm;
+  min-height: auto;
+  padding: 0;
   box-sizing: border-box;
+}
+
+.cv-print-cover {
+  margin-bottom: 4mm;
 }
 
 .cv-page-sheet + .cv-page-sheet {
@@ -114,7 +119,7 @@
   height: 34mm;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 28%;
 }
 
 .cv-summary {

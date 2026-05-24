@@ -21,8 +21,10 @@ export function CvDocument() {
   return (
     <div id="cv-print" className="cv-document">
       <div className="cv-page-sheet">
-        <CvHeader profile={cvDocument.profile} />
-        <p className="cv-summary">{pickLocalized(cvDocument.profile.summary, locale)}</p>
+        <div className="cv-print-cover print-only">
+          <CvHeader profile={cvDocument.profile} />
+          <p className="cv-summary">{pickLocalized(cvDocument.profile.summary, locale)}</p>
+        </div>
 
         <div className="cv-grid-page-1">
           <div className="cv-col">

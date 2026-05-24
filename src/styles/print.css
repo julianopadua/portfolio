@@ -22,6 +22,14 @@
     display: none !important;
   }
 
+  .print-only {
+    display: block !important;
+  }
+
+  .cv-print-cover {
+    margin-bottom: 4mm;
+  }
+
   .min-h-screen > div {
     display: block !important;
     max-width: none !important;
@@ -44,7 +52,9 @@
   .cv-document {
     width: 210mm !important;
     max-width: none !important;
-    margin: 0 !important;
+    min-height: auto !important;
+    margin: 0 auto !important;
+    background: #ffffff !important;
     box-shadow: none !important;
     border: none !important;
   }

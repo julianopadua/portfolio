@@ -35,6 +35,7 @@ export const ui = {
     title: 'Projects',
     viewRepo: 'Repository',
     viewDemo: 'Demo',
+    viewSite: 'Visit site',
     stack: 'Stack',
     period: 'Period',
     status: {

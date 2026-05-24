@@ -146,21 +146,40 @@ export const projects: ProjectItem[] = [
     featured: true,
   },
   {
-    id: 'integra-lab-project',
-    name: { pt: 'IntegraLab / Whirlpool', en: 'IntegraLab / Whirlpool' },
+    id: 'instituto-forest',
+    name: { pt: 'Instituto Forest', en: 'Instituto Forest' },
     shortDescription: {
-      pt: 'Soluções IoT com front-end, back-end, análise e ciência de dados.',
-      en: 'IoT solutions with front-end, back-end, analytics, and data science.',
+      pt: 'Portal de dados abertos para decisões reais — catálogo público, API de metadados e relatórios analíticos.',
+      en: 'Open data portal for real-world decisions — public catalog, metadata API, and analytical reports.',
     },
     longDescription: {
-      pt: 'Projeto acadêmico-industrial UFSCar + Whirlpool (set/2025 - fev/2026 e novo ciclo desde mar/2026).',
-      en: 'UFSCar + Whirlpool academic-industry project (Sep 2025 - Feb 2026 and new cycle from Mar 2026).',
+      pt: 'Ecossistema open source: portal (front-end e orquestração de URLs oficiais), pipelines Python com SDK forest-data, automação de conteúdo para redes sociais e geração de relatórios.',
+      en: 'Open-source ecosystem: portal (front-end and official URL orchestration), Python pipelines with the forest-data SDK, social content automation, and report generation.',
     },
-    stack: ['IoT', 'React', 'Python', 'Data Science'],
+    stack: ['Next.js', 'TypeScript', 'Python', 'Open Data', 'Supabase'],
     status: 'active',
-    period: '2025-2026',
-    tags: ['industry', 'ufscar', 'iot'],
-    links: {},
+    period: '2025 – today',
+    tags: ['open-data', 'environment', 'open-source'],
+    hero: true,
+    sitePreview: {
+      url: 'https://institutoforest.org',
+      title: { pt: 'Instituto Forest', en: 'Instituto Forest' },
+      description: {
+        pt: 'Dados abertos por meio de código aberto. Portal do Instituto Forest: catálogo público, relatórios analíticos e API de metadados.',
+        en: 'Open data through open source. Instituto Forest portal: public catalog, analytical reports, and metadata API.',
+      },
+      imageUrl: 'https://institutoforest.org/og-image.png',
+    },
+    links: {
+      demo: 'https://institutoforest.org',
+      repository: 'https://github.com/julianopadua/forest-portal',
+      other: [
+        {
+          label: { pt: 'Pipelines & SDK', en: 'Pipelines & SDK' },
+          href: 'https://github.com/julianopadua/forest-open-data-pipelines',
+        },
+      ],
+    },
     featured: true,
   },
   {

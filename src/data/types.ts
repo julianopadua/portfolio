@@ -54,6 +54,13 @@ export interface CvPublication {
   placeholder?: boolean
 }
 
+export interface ProjectSitePreview {
+  url: string
+  title: LocalizedString
+  description: LocalizedString
+  imageUrl: string
+}
+
 export interface ProjectItem {
   id: string
   name: LocalizedString
@@ -63,12 +70,16 @@ export interface ProjectItem {
   status: 'active' | 'completed' | 'archived' | 'placeholder'
   period?: string
   tags: string[]
+  logo?: string
+  sitePreview?: ProjectSitePreview
   links: {
     repository?: string
     demo?: string
     other?: { label: LocalizedString; href: string }[]
   }
   featured?: boolean
+  /** Full-width spotlight card on the projects page (spans 2 columns). */
+  hero?: boolean
   placeholder?: boolean
 }
 

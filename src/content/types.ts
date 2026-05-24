@@ -22,6 +22,7 @@ export type UiMessages = {
     title: string
     viewRepo: string
     viewDemo: string
+    viewSite: string
     stack: string
     period: string
     status: { active: string; completed: string; archived: string; placeholder: string }

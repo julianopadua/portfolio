@@ -13,7 +13,7 @@ export const cvDocument: CvDocumentData = {
       pt: 'Estudante de Engenharia da Computação com experiência em ciência de dados, análise de mercado e desenvolvimento de soluções orientadas a resultados. Atuo na interseção entre engenharia de software, machine learning, estatística e BI, com exposição a inteligência de mercado e prevenção a fraudes.',
       en: 'Computer Engineering student with experience in data science, market analysis, and the development of results-oriented solutions. I work at the intersection of software engineering, machine learning, statistics, and BI, with exposure to market intelligence and fraud prevention.',
     },
-    photoSrc: publicAsset('imgs/avatar.png'),
+    photoSrc: publicAsset('imgs/new-img.png'),
     email: profile.email,
     phone: profile.phone,
     location: profile.location,
