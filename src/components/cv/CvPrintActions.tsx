@@ -5,7 +5,7 @@ export function CvPrintActions() {
   const { t } = useLocale()
 
   return (
-    <div className="no-print mb-6">
+    <div className="cv-print-actions no-print mb-6">
       <button
         type="button"
         onClick={() => window.print()}

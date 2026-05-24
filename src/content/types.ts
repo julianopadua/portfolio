@@ -5,17 +5,18 @@ export type UiMessages = {
   cv: {
     title: string
     print: string
-    education: string
-    experience: string
-    research: string
-    projects: string
-    skills: string
-    softSkills: string
-    hardSkills: string
-    publications: string
-    volunteering: string
-    contact: string
-    placeholder: string
+    sections: {
+      professionalExperience: string
+      otherExperience: string
+      skills: string
+      languages: string
+      education: string
+      certifications: string
+      achievements: string
+      volunteering: string
+      knowledge: string
+      interests: string
+    }
   }
   projects: {
     title: string

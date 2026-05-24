@@ -1,275 +1,310 @@
-import type { CvEntry, CvPublication, CvSkill } from './types'
+import { publicAsset } from '../lib/assets'
+import { profile } from './profile'
+import type { CvDocumentData } from './types'
 
-export const cvEducation: CvEntry[] = [
-  {
-    id: 'ufscar-bsc',
-    title: {
-      pt: 'Bacharelado em Engenharia da Computação',
-      en: "Bachelor's in Computer Engineering",
+export const cvDocument: CvDocumentData = {
+  profile: {
+    name: profile.name,
+    headline: {
+      pt: 'Machine Learning Researcher | Fraud Business Analyst | Data & Environmental Intelligence',
+      en: 'Machine Learning Researcher | Fraud Business Analyst | Data & Environmental Intelligence',
     },
-    organization: {
-      pt: 'Universidade Federal de São Carlos (UFSCar)',
-      en: 'Federal University of São Carlos (UFSCar)',
+    summary: {
+      pt: 'Estudante de Engenharia da Computação com experiência em ciência de dados, análise de mercado e desenvolvimento de soluções orientadas a resultados. Atuo na interseção entre engenharia de software, machine learning, estatística e BI, com exposição a inteligência de mercado e prevenção a fraudes.',
+      en: 'Computer Engineering student with experience in data science, market analysis, and the development of results-oriented solutions. I work at the intersection of software engineering, machine learning, statistics, and BI, with exposure to market intelligence and fraud prevention.',
     },
-    location: { pt: 'São Carlos, SP', en: 'São Carlos, SP' },
-    period: { pt: 'Ago 2021 - Jul 2026', en: 'Aug 2021 - Jul 2026' },
-    description: {
-      pt: 'Formação em computação com projetos aplicados em software, dados e sistemas.',
-      en: 'Computer engineering degree with applied projects in software, data, and systems.',
-    },
+    photoSrc: publicAsset('imgs/avatar.png'),
+    email: profile.email,
+    phone: profile.phone,
+    location: profile.location,
+    linkedin: profile.links.linkedin,
+    github: profile.links.github,
+    website: 'https://julianopadua.github.io',
   },
-  {
-    id: 'ufscar-ta',
-    title: {
-      pt: 'Monitor de Introdução à Computação',
-      en: 'Introduction to Computing Teaching Assistant',
-    },
-    organization: { pt: 'UFSCar', en: 'UFSCar' },
-    period: { pt: 'Fev 2022 - Mai 2022', en: 'Feb 2022 - May 2022' },
-    description: {
-      pt: 'Monitoria em disciplina introdutória de computação.',
-      en: 'Teaching assistant for introductory computing course.',
-    },
-  },
-  {
-    id: 'ufscar-tutor-geometry',
-    title: {
-      pt: 'Tutor de Geometria Analítica',
-      en: 'Analytic Geometry Tutor',
-    },
-    organization: { pt: 'UFSCar', en: 'UFSCar' },
-    period: { pt: 'Mai 2023 - Set 2023', en: 'May 2023 - Sep 2023' },
-    description: {
-      pt: 'Tutoria em Geometria Analítica.',
-      en: 'Tutoring in Analytic Geometry.',
-    },
-  },
-  {
-    id: 'integralab-leader-2025',
-    title: {
-      pt: 'IntegraLab + Whirlpool',
-      en: 'IntegraLab + Whirlpool',
-    },
-    organization: { pt: 'UFSCar + Whirlpool', en: 'UFSCar + Whirlpool' },
-    period: { pt: 'Set 2025 - Fev 2026', en: 'Sep 2025 - Feb 2026' },
-    description: {
-      pt: 'Projeto com IoT, front-end, back-end, análise e ciência de dados.',
-      en: 'Project with IoT, front-end, back-end, analytics, and data science.',
-    },
-  },
-  {
-    id: 'integralab-leader-2026',
-    title: {
-      pt: 'IntegraLab + Whirlpool (novo ciclo)',
-      en: 'IntegraLab + Whirlpool (new cycle)',
-    },
-    organization: { pt: 'UFSCar + Whirlpool', en: 'UFSCar + Whirlpool' },
-    period: { pt: 'Mar 2026 - Atual', en: 'Mar 2026 - Present' },
-    description: {
-      pt: 'Novo ciclo do projeto acadêmico-industrial IntegraLab.',
-      en: 'New cycle of the IntegraLab academic-industry project.',
-    },
-  },
-  {
-    id: 'panda-tutor',
-    title: {
-      pt: 'Tutor de Redes Neurais (PANDA)',
-      en: 'Neural Networks Tutor (PANDA)',
-    },
-    organization: { pt: 'Diretoria de Projetos PANDA, UFSCar', en: 'PANDA Projects Directorate, UFSCar' },
-    period: { pt: 'Set 2025 - Atual', en: 'Sep 2025 - Present' },
-    description: {
-      pt: 'Tutoria em Redes Neurais.',
-      en: 'Tutoring in Neural Networks.',
-    },
-  },
-]
 
-export const cvExperience: CvEntry[] = [
-  {
-    id: 'incomm',
-    title: {
-      pt: 'Estagiário em Fraud Business Analytics',
-      en: 'Fraud Business Analytics Intern',
+  professionalExperience: [
+    {
+      id: 'incomm',
+      company: 'InComm Payments',
+      location: { pt: 'Remoto', en: 'Remote' },
+      period: { pt: 'Nov 2025 – Atual', en: 'Nov 2025 – Present' },
+      roles: [
+        {
+          title: {
+            pt: 'Estagiário em Fraud Business Analytics',
+            en: 'Fraud Business Analytics Intern',
+          },
+          bullets: [
+            {
+              pt: 'Monitoramento de padrões de fraude e apoio à prevenção por meio de análise de dados em ambiente 100% em inglês.',
+              en: 'Monitored fraud patterns and supported prevention efforts through data analysis in an English-only environment.',
+            },
+            {
+              pt: 'Análises com Splunk, Accertify e dashboards para visibilidade de KPIs e qualidade de sinais de fraude.',
+              en: 'Performed analytics with Splunk, Accertify, and dashboards for KPI visibility and fraud signal quality.',
+            },
+            {
+              pt: 'Colaboração com equipes de negócio e tecnologia em fluxos de investigação e documentação de casos.',
+              en: 'Collaborated with business and technology teams on investigation workflows and case documentation.',
+            },
+          ],
+        },
+      ],
     },
-    organization: { pt: 'InComm Payments', en: 'InComm Payments' },
-    period: { pt: 'Nov 2025 - Atual', en: 'Nov 2025 - Present' },
-    description: {
-      pt: 'Monitoramento de padrões de fraude e apoio à prevenção via análise de dados, em ambiente 100% em inglês.',
-      en: 'Monitored fraud patterns and supported prevention through data analysis in an English-only environment.',
+    {
+      id: 'hedgepoint',
+      company: 'HedgePoint Global Markets',
+      href: 'https://hedgepointglobal.com/',
+      location: { pt: 'Campinas, Brasil', en: 'Campinas, Brazil' },
+      period: { pt: 'Set 2024 – Mar 2025', en: 'Sep 2024 – Mar 2025' },
+      roles: [
+        {
+          title: {
+            pt: 'Estagiário de Inteligência de Mercado',
+            en: 'Market Intelligence Intern',
+          },
+          bullets: [
+            {
+              pt: 'Automação de relatórios e análises com Python, SQL, Excel e VBA para insights em mercados de commodities.',
+              en: 'Automated reporting and analysis with Python, SQL, Excel, and VBA for commodities market insights.',
+            },
+            {
+              pt: 'Construção de fluxos reutilizáveis e referência técnica entre TI e Inteligência de Mercado.',
+              en: 'Built reusable workflows and served as a technical bridge between IT and Market Intelligence.',
+            },
+            {
+              pt: 'Web scraping, ETL e consolidação de dados para suporte a decisões de hedge e análise fundamentalista.',
+              en: 'Web scraping, ETL, and data consolidation to support hedging decisions and fundamental analysis.',
+            },
+          ],
+        },
+      ],
     },
-  },
-  {
-    id: 'maricondi',
-    title: { pt: 'Estagiário de Projetos', en: 'Projects Intern' },
-    organization: { pt: 'Laboratório Maricondi', en: 'Laboratório Maricondi' },
-    period: { pt: 'Set 2025 - Nov 2025', en: 'Sep 2025 - Nov 2025' },
-    description: {
-      pt: 'Dashboards Power BI e consultas SQL para visibilidade de KPIs e qualidade de dados.',
-      en: 'Built and maintained Power BI dashboards and SQL queries for KPI visibility and data quality.',
-    },
-  },
-  {
-    id: 'all-juice',
-    title: { pt: 'Desenvolvedor voluntário', en: 'Volunteer Developer' },
-    organization: { pt: 'All Juice Capital', en: 'All Juice Capital' },
-    period: { pt: 'Mai 2025 - Set 2025', en: 'May 2025 - Sep 2025' },
-    description: {
-      pt: 'Desenvolvimento voluntário full-stack, pipelines de dados e suporte a trading systems.',
-      en: 'Volunteer full-stack development, data pipelines, and trading systems support.',
-    },
-    href: 'https://www.alljuicecapital.com/',
-  },
-  {
-    id: 'hedgepoint',
-    title: {
-      pt: 'Estagiário de Inteligência de Mercado',
-      en: 'Market Intelligence Intern',
-    },
-    organization: {
-      pt: 'HedgePoint Global Markets',
-      en: 'HedgePoint Global Markets',
-    },
-    period: { pt: 'Set 2024 - Mar 2025', en: 'Sep 2024 - Mar 2025' },
-    description: {
-      pt: 'Automação de relatórios e análises com Python, SQL, Excel e VBA; fluxos reutilizáveis e interface entre TI e Inteligência de Mercado.',
-      en: 'Automated reporting and analysis with Python, SQL, Excel, and VBA; reusable workflows and bridge between IT and Market Intelligence.',
-    },
-    href: 'https://hedgepointglobal.com/',
-  },
-  {
-    id: 'leadfy',
-    title: { pt: 'Estagiário de Suporte Técnico', en: 'Technical Support Intern' },
-    organization: { pt: 'Leadfy Imob', en: 'Leadfy Imob' },
-    period: { pt: 'Mai 2024 - Set 2024', en: 'May 2024 - Sep 2024' },
-    description: {
-      pt: 'Suporte técnico, troubleshooting e documentação em fluxo ágil; apoio a produto com machine learning.',
-      en: 'Technical support, troubleshooting, and documentation in agile workflow; assisted ML-related product development.',
-    },
-    href: 'https://leadfy-imob.com.br/',
-  },
-]
+  ],
 
-export const cvResearch: CvEntry[] = [
-  {
-    id: 'tcc-cerrado',
-    title: {
-      pt: 'TCC: previsão de focos de incêndio no Cerrado com variáveis climáticas',
-      en: 'Thesis: Cerrado fire hotspot prediction using climate variables',
+  otherExperience: [
+    {
+      id: 'leadfy',
+      company: 'Leadfy Imob',
+      href: 'https://leadfy-imob.com.br/',
+      title: { pt: 'Estagiário de Suporte Técnico', en: 'Technical Support Intern' },
+      period: { pt: 'Mai 2024 – Set 2024', en: 'May 2024 – Sep 2024' },
+      location: { pt: 'Remoto', en: 'Remote' },
     },
-    organization: { pt: 'UFSCar', en: 'UFSCar' },
-    period: { pt: 'Defesa em Mar 2026', en: 'Defended Mar 2026' },
-    description: {
-      pt: 'Comparativo de modelos de ML com dados INMET e BDQueimadas; feature engineering e tratamento de desbalanceamento.',
-      en: 'Comparative ML models with INMET data and INPE fire records; feature engineering and imbalance treatment.',
+    {
+      id: 'maricondi',
+      company: 'Laboratório Maricondi',
+      title: { pt: 'Estagiário de Projetos', en: 'Projects Intern' },
+      period: { pt: 'Set 2025 – Nov 2025', en: 'Sep 2025 – Nov 2025' },
+      location: { pt: 'São Carlos, SP', en: 'São Carlos, SP' },
     },
-    href: 'https://repositorio.ufscar.br/items/969fd627-d894-40be-89fb-b20127ba3f03',
-  },
-]
+    {
+      id: 'integralab',
+      company: 'IntegraLab · Whirlpool',
+      title: {
+        pt: 'Projeto R&D (ciclos 2025–2026) — IoT, visão computacional e full stack',
+        en: 'R&D Project (2025–2026 cycles) — IoT, computer vision, and full stack',
+      },
+      period: { pt: 'Set 2025 – Atual', en: 'Sep 2025 – Present' },
+      location: { pt: 'UFSCar · São Carlos, SP', en: 'UFSCar · São Carlos, SP' },
+    },
+    {
+      id: 'panda',
+      company: 'PANDA · UFSCar',
+      title: {
+        pt: 'Diretor de Projetos e Tutor de Redes Neurais',
+        en: 'Projects Director and Neural Networks Tutor',
+      },
+      period: { pt: 'Set 2025 – Atual', en: 'Sep 2025 – Present' },
+      location: { pt: 'São Carlos, SP', en: 'São Carlos, SP' },
+    },
+  ],
 
-export const cvProjectsHighlight: CvEntry[] = [
-  {
-    id: 'integralab-cv-2025',
-    title: { pt: 'IntegraLab + Whirlpool', en: 'IntegraLab + Whirlpool' },
-    period: { pt: 'Set 2025 - Fev 2026', en: 'Sep 2025 - Feb 2026' },
-    description: {
-      pt: 'Soluções IoT com front-end, back-end, análise e ciência de dados.',
-      en: 'IoT solutions with front-end, back-end, analytics, and data science.',
-    },
-  },
-  {
-    id: 'integralab-cv-2026',
-    title: { pt: 'IntegraLab + Whirlpool (novo ciclo)', en: 'IntegraLab + Whirlpool (new cycle)' },
-    period: { pt: 'Mar 2026 - Atual', en: 'Mar 2026 - Present' },
-    description: {
-      pt: 'Novo ciclo do projeto acadêmico-industrial.',
-      en: 'New cycle of the academic-industry project.',
-    },
-  },
-]
+  skills: [
+    { label: { pt: 'Programação', en: 'Programming' } },
+    { label: { pt: 'Análise e desenvolvimento de sistemas', en: 'Systems analysis & development' } },
+    { label: { pt: 'Desenvolvimento full stack', en: 'Full stack development' } },
+    { label: { pt: 'Análise de fraude', en: 'Fraud analytics' } },
+    { label: { pt: 'Machine Learning', en: 'Machine Learning' } },
+    { label: { pt: 'Python', en: 'Python' } },
+    { label: { pt: 'SQL', en: 'SQL' } },
+    { label: { pt: 'Power BI', en: 'Power BI' } },
+    { label: { pt: 'Splunk', en: 'Splunk' } },
+    { label: { pt: 'React / TypeScript', en: 'React / TypeScript' } },
+    { label: { pt: 'Dados ambientais', en: 'Environmental data' } },
+  ],
 
-export const cvSoftSkills: CvSkill[] = [
-  {
-    name: { pt: 'Comunicação em inglês (ambiente profissional)', en: 'Professional English communication' },
-    detail: {
-      pt: 'Experiência em ambiente internacional na InComm Payments.',
-      en: 'Experience in an international environment at InComm Payments.',
+  languages: [
+    {
+      language: { pt: 'Português', en: 'Portuguese' },
+      levelLabel: { pt: 'Nativo', en: 'Native' },
+      score: 5,
     },
-  },
-  {
-    name: { pt: 'Trabalho em equipe e liderança de projeto', en: 'Teamwork and project leadership' },
-    detail: {
-      pt: 'IntegraLab, PANDA e projetos multidisciplinares.',
-      en: 'IntegraLab, PANDA, and multidisciplinary projects.',
+    {
+      language: { pt: 'Inglês', en: 'English' },
+      levelLabel: { pt: 'Avançado', en: 'Advanced' },
+      score: 5,
     },
-  },
-  {
-    name: { pt: 'Resolução de problemas orientada a dados', en: 'Data-driven problem solving' },
-  },
-  {
-    name: { pt: 'Gestão de tempo', en: 'Time management' },
-  },
-]
+    {
+      language: { pt: 'Espanhol', en: 'Spanish' },
+      levelLabel: { pt: 'Intermediário', en: 'Intermediate' },
+      score: 3,
+    },
+  ],
 
-export const cvHardSkills: CvSkill[] = [
-  {
-    name: { pt: 'Data Analytics', en: 'Data Analytics' },
-    detail: {
-      pt: 'EDA, feature engineering, KPIs, Power BI (DAX, Power Query), Excel, Accertify, Splunk',
-      en: 'EDA, feature engineering, KPIs, Power BI (DAX, Power Query), Excel, Accertify, Splunk',
+  education: [
+    {
+      id: 'ufscar-bsc',
+      degree: {
+        pt: 'Bacharelado em Engenharia da Computação',
+        en: "Bachelor's in Computer Engineering",
+      },
+      institution: {
+        pt: 'Universidade Federal de São Carlos (UFSCar)',
+        en: 'Federal University of São Carlos (UFSCar)',
+      },
+      period: { pt: 'Ago 2021 – Jul 2026', en: 'Aug 2021 – Jul 2026' },
+      location: { pt: 'São Carlos, SP', en: 'São Carlos, SP' },
+      href: 'https://www.ufscar.br/',
     },
-  },
-  {
-    name: { pt: 'Data Science', en: 'Data Science' },
-    detail: {
-      pt: 'Aprendizado supervisionado, avaliação de modelos',
-      en: 'Supervised learning, model evaluation',
-    },
-  },
-  {
-    name: { pt: 'Programação', en: 'Programming' },
-    detail: {
-      pt: 'Python, SQL, VBA, TypeScript, JavaScript',
-      en: 'Python, SQL, VBA, TypeScript, JavaScript',
-    },
-  },
-  {
-    name: { pt: 'Data Engineering', en: 'Data Engineering' },
-    detail: {
-      pt: 'Web scraping, ETL, consolidação de dados, agendamento, logging',
-      en: 'Web scraping, ETL, data consolidation, scheduling, logging',
-    },
-  },
-  {
-    name: { pt: 'Bancos de dados e ferramentas', en: 'Databases and tools' },
-    detail: {
-      pt: 'PostgreSQL, SQL Server, SSAS, Git, GitHub',
-      en: 'PostgreSQL, SQL Server, SSAS, Git, GitHub',
-    },
-  },
-  {
-    name: { pt: 'Web', en: 'Web' },
-    detail: {
-      pt: 'Next.js, React, Tailwind CSS, REST APIs',
-      en: 'Next.js, React, Tailwind CSS, REST APIs',
-    },
-  },
-  {
-    name: { pt: 'Finanças', en: 'Finance' },
-    detail: {
-      pt: 'Commodities, trading systems, prevenção a fraudes',
-      en: 'Commodities, trading systems, fraud prevention',
-    },
-  },
-  {
-    name: { pt: 'Idiomas', en: 'Languages' },
-    detail: {
-      pt: 'Português (nativo), inglês (avançado), espanhol (intermediário)',
-      en: 'Portuguese (native), English (advanced), Spanish (intermediate)',
-    },
-  },
-]
+  ],
 
-export const cvPublications: CvPublication[] = []
+  certifications: [
+    {
+      id: 'alura',
+      title: {
+        pt: 'Python, Data Science, Machine Learning, SQL/PostgreSQL, Power BI, Excel e VBA',
+        en: 'Python, Data Science, Machine Learning, SQL/PostgreSQL, Power BI, Excel and VBA',
+      },
+      issuer: { pt: 'Alura', en: 'Alura' },
+      period: { pt: '2023 – 2025', en: '2023 – 2025' },
+    },
+    {
+      id: 'udemy-git',
+      title: { pt: 'Git e GitHub Bootcamp', en: 'Git and GitHub Bootcamp' },
+      issuer: { pt: 'Udemy', en: 'Udemy' },
+      period: { pt: '2024', en: '2024' },
+    },
+    {
+      id: 'hedgepoint-academy',
+      title: {
+        pt: 'Hedging, Basis, Análise Fundamentalista e Coffee Hedging',
+        en: 'Hedging, Basis, Fundamental Analysis and Coffee Hedging',
+      },
+      issuer: { pt: 'Hedgepoint Academy', en: 'Hedgepoint Academy' },
+      period: { pt: '2024 – 2025', en: '2024 – 2025' },
+    },
+  ],
 
-export const cvVolunteering: CvEntry[] = []
+  volunteering: [
+    {
+      id: 'all-juice',
+      organization: { pt: 'All Juice Capital', en: 'All Juice Capital' },
+      role: { pt: 'Desenvolvedor voluntário', en: 'Volunteer Developer' },
+      period: { pt: 'Mai 2025 – Set 2025', en: 'May 2025 – Sep 2025' },
+      location: { pt: 'Remoto · Reino Unido', en: 'Remote · United Kingdom' },
+      href: 'https://www.alljuicecapital.com/',
+      bullets: [
+        {
+          pt: 'Desenvolvimento full-stack com Python e TypeScript para produtos internos e externos da startup.',
+          en: 'Full-stack development with Python and TypeScript for internal and external startup products.',
+        },
+        {
+          pt: 'Pipelines de dados, automação e suporte a trading systems e ferramentas analíticas.',
+          en: 'Data pipelines, automation, and support for trading systems and analytics tools.',
+        },
+        {
+          pt: 'Onboarding, documentação técnica e colaboração em fluxo ágil (Kanban).',
+          en: 'Onboarding, technical documentation, and collaboration in agile Kanban workflows.',
+        },
+      ],
+    },
+  ],
+
+  interests: [
+    {
+      id: 'history-philosophy',
+      title: { pt: 'História e filosofia', en: 'History and philosophy' },
+      description: {
+        pt: 'História econômica e da filosofia; leitura de obras originais de filósofos e economistas clássicos.',
+        en: 'Economic and intellectual history; reading original works by classical philosophers and economists.',
+      },
+    },
+    {
+      id: 'open-source',
+      title: { pt: 'Comunidade open source', en: 'Open source community' },
+      description: {
+        pt: 'Contribuição e manutenção de projetos públicos, com foco em dados abertos e ferramentas reutilizáveis.',
+        en: 'Contributing to and maintaining public projects focused on open data and reusable tooling.',
+      },
+    },
+    {
+      id: 'travel-culture',
+      title: { pt: 'Viagens e cultura', en: 'Travel and culture' },
+      description: {
+        pt: 'Viagens com conexão histórica, experiências ambientais e atividades ao ar livre.',
+        en: 'Travel with historical context, environmental experiences, and outdoor activities.',
+      },
+    },
+    {
+      id: 'sports',
+      title: { pt: 'Esportes', en: 'Sports' },
+      description: {
+        pt: 'Calistenia e corrida como rotina de disciplina e bem-estar.',
+        en: 'Calisthenics and running as part of a discipline and wellness routine.',
+      },
+    },
+  ],
+
+  achievements: [
+    {
+      id: 'tcc-cerrado',
+      title: {
+        pt: 'TCC em Machine Learning — nota máxima',
+        en: 'Undergraduate thesis in Machine Learning — top grade',
+      },
+      organization: { pt: 'UFSCar', en: 'UFSCar' },
+      description: {
+        pt: 'Previsão de focos de incêndio no Cerrado com variáveis climáticas (INMET e BDQueimadas); comparativo de modelos, feature engineering e tratamento de desbalanceamento. Defesa em mar/2026.',
+        en: 'Cerrado fire hotspot prediction using climate variables (INMET and INPE records); model comparison, feature engineering, and class imbalance treatment. Defended Mar 2026.',
+      },
+      href: 'https://repositorio.ufscar.br/items/969fd627-d894-40be-89fb-b20127ba3f03',
+    },
+    {
+      id: 'instituto-forest',
+      title: {
+        pt: 'Instituto Forest — ecossistema open source',
+        en: 'Instituto Forest — open source ecosystem',
+      },
+      organization: { pt: 'Instituto Forest', en: 'Instituto Forest' },
+      description: {
+        pt: 'Desenvolvimento do cliente Python forest-data e pipelines de dados abertos ambientais para a API pública do Instituto Forest (institutoforest.org).',
+        en: 'Development of the forest-data Python client and open environmental data pipelines for the Instituto Forest public API (institutoforest.org).',
+      },
+      href: 'https://github.com/julianopadua/forest-open-data-pipelines',
+    },
+  ],
+
+  knowledge: [
+    {
+      label: { pt: 'Análise e ciência de dados', en: 'Data analysis & data science' },
+      value: 55,
+      color: '#008d9f',
+    },
+    {
+      label: { pt: 'Desenvolvimento full stack', en: 'Full stack development' },
+      value: 30,
+      color: '#4a6a6e',
+    },
+    {
+      label: { pt: 'Finanças e economia', en: 'Finance & economics' },
+      value: 15,
+      color: '#8a9a9c',
+    },
+  ],
+
+  knowledgeSummary: {
+    pt: 'Perfil que combina engenharia de dados, machine learning e desenvolvimento de software com exposição a mercados de commodities, prevenção a fraudes e ciência de dados ambiental.',
+    en: 'Profile combining data engineering, machine learning, and software development with exposure to commodity markets, fraud prevention, and environmental data science.',
+  },
+}

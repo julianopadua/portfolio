@@ -1,46 +1,97 @@
 @media print {
   @page {
-    margin: 12mm;
     size: A4;
+    margin: 0;
   }
 
+  html,
   body {
+    margin: 0 !important;
+    padding: 0 !important;
     background: white !important;
-    color: #000 !important;
-    font-size: 11pt;
+    color: #222 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
-  .no-print {
+  .no-print,
+  .app-sidebar,
+  .top-nav,
+  .cv-print-actions,
+  .portfolio-shell-nav {
     display: none !important;
   }
 
-  .print-only {
+  .min-h-screen > div {
     display: block !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 0 !important;
   }
 
-  #cv-print {
-    max-width: 100% !important;
-    margin: 0 !important;
+  main {
+    max-width: none !important;
     padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .cv-page {
+    background: white !important;
+    padding: 0 !important;
+  }
+
+  .cv-document {
+    width: 210mm !important;
+    max-width: none !important;
+    margin: 0 !important;
     box-shadow: none !important;
     border: none !important;
   }
 
-  .cv-entry,
-  .cv-section-block {
+  .cv-page-sheet {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 11mm 12mm;
+    box-sizing: border-box;
+    page-break-after: always;
+    break-after: page;
+    border-top: none !important;
+  }
+
+  .cv-page-sheet:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .cv-avoid-break,
+  .cv-experience,
+  .cv-compact,
+  .cv-volunteer,
+  .cv-achievement,
+  .cv-edu-item,
+  .cv-cert-item,
+  .cv-language,
+  .cv-interest {
     break-inside: avoid;
     page-break-inside: avoid;
   }
 
-  a[href]::after {
-    content: ' (' attr(href) ')';
-    font-size: 9pt;
-    color: #444;
+  #cv-print {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 
-  a[href^='#']::after,
-  a[href^='mailto:']::after {
-    content: '';
+  a[href]::after {
+    content: none !important;
+  }
+
+  .cv-header__contact a,
+  .cv-experience__company a {
+    color: inherit !important;
   }
 }
 
