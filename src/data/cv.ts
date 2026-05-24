@@ -296,17 +296,17 @@ export const cvDocument: CvDocumentData = {
     {
       label: { pt: 'Análise e ciência de dados', en: 'Data analysis & data science' },
       value: 55,
-      color: '#008d9f',
+      color: '#1a5c47',
     },
     {
       label: { pt: 'Desenvolvimento full stack', en: 'Full stack development' },
       value: 30,
-      color: '#4a6a6e',
+      color: '#2d7a5f',
     },
     {
       label: { pt: 'Finanças e economia', en: 'Finance & economics' },
       value: 15,
-      color: '#8a9a9c',
+      color: '#5a9a82',
     },
   ],
 

@@ -7,7 +7,7 @@ interface KnowledgePieChartProps {
   summary: LocalizedString
 }
 
-const DEFAULT_COLORS = ['#008d9f', '#4a6a6e', '#8a9a9c', '#b5c4c6']
+const DEFAULT_COLORS = ['#1a5c47', '#2d7a5f', '#5a9a82', '#8fb8a8']
 const SIZE = 160
 const CENTER = SIZE / 2
 const RADIUS = 59

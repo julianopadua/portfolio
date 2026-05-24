@@ -1,4 +1,4 @@
-/* CV document - Victor-style A4 layout (screen + print base) */
+/* CV document - A4 layout (screen + print base) */
 
 .cv-page {
   padding: 0;
@@ -6,6 +6,12 @@
 }
 
 .cv-document {
+  --cv-accent: #1a5c47;
+  --cv-accent-hover: #247a62;
+  --cv-accent-soft: #3d7a66;
+  --cv-accent-pale: #7aa892;
+  --cv-title-font: 'Montserrat', 'Lato', Arial, Helvetica, sans-serif;
+
   color: #222222;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 9.2pt;
@@ -83,7 +89,13 @@
 }
 
 .cv-accent {
-  color: #008d9f;
+  color: var(--cv-accent);
+  text-decoration: none;
+}
+
+.cv-accent:hover {
+  color: var(--cv-accent-hover);
+  text-decoration: underline;
 }
 
 .cv-section {
@@ -91,11 +103,12 @@
 }
 
 .cv-section-title {
+  font-family: var(--cv-title-font);
   font-size: 17pt;
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
   line-height: 1.05;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: #111111;
   border-bottom: 2.5px solid #111111;
   padding-bottom: 2mm;
@@ -116,19 +129,21 @@
 }
 
 .cv-header__name {
+  font-family: var(--cv-title-font);
   font-size: 26pt;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   line-height: 1;
   margin: 0 0 2mm;
-  color: #111111;
+  color: #1a3329;
 }
 
 .cv-header__headline {
+  font-family: var(--cv-title-font);
   font-size: 10.5pt;
   font-weight: 700;
-  color: #008d9f;
+  color: var(--cv-accent);
   margin: 0 0 3mm;
   line-height: 1.25;
 }
@@ -154,12 +169,12 @@
 }
 
 .cv-header__contact a:hover {
-  color: #008d9f;
+  color: var(--cv-accent);
 }
 
 .cv-header__contact-icon {
   flex-shrink: 0;
-  color: #008d9f;
+  color: var(--cv-accent);
 }
 
 .cv-header__photo {
@@ -210,9 +225,10 @@
 }
 
 .cv-experience__company {
+  font-family: var(--cv-title-font);
   font-size: 12pt;
   font-weight: 700;
-  color: #111111;
+  color: #1a3329;
   margin: 0;
 }
 
@@ -237,9 +253,10 @@
 }
 
 .cv-experience__role-title {
+  font-family: var(--cv-title-font);
   font-size: 10pt;
   font-weight: 700;
-  color: #008d9f;
+  color: var(--cv-accent);
   margin: 0 0 1mm;
 }
 
@@ -340,7 +357,7 @@
 }
 
 .cv-language__dot--filled {
-  background: #008d9f;
+  background: var(--cv-accent);
 }
 
 /* Education & certifications */
@@ -359,9 +376,10 @@
 
 .cv-edu-item__institution,
 .cv-cert-item__issuer {
+  font-family: var(--cv-title-font);
   font-size: 9.5pt;
   font-weight: 700;
-  color: #008d9f;
+  color: var(--cv-accent);
   margin: 0.5mm 0;
 }
 
@@ -392,8 +410,9 @@
 }
 
 .cv-volunteer__role {
+  font-family: var(--cv-title-font);
   font-weight: 700;
-  color: #008d9f;
+  color: var(--cv-accent);
   font-size: 9.5pt;
   margin: 0.5mm 0;
 }
