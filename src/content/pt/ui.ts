@@ -1,0 +1,62 @@
+export const ui = {
+  nav: {
+    about: 'Sobre',
+    cv: 'CV',
+    projects: 'Projetos',
+  },
+  lang: {
+    pt: 'PT',
+    en: 'EN',
+    switch: 'Idioma',
+  },
+  about: {
+    title: 'Sobre',
+    intro: 'Apresentação',
+    timeline: 'Trajetória',
+    placeholder: 'Em breve',
+  },
+  cv: {
+    title: 'Currículo',
+    print: 'Imprimir / Salvar PDF',
+    education: 'Formação',
+    experience: 'Experiência',
+    research: 'Pesquisa',
+    projects: 'Projetos em destaque',
+    skills: 'Habilidades',
+    softSkills: 'Soft skills',
+    hardSkills: 'Hard skills',
+    publications: 'Publicações e preprints',
+    volunteering: 'Voluntariado e liderança',
+    contact: 'Contato',
+    placeholder: 'A preencher',
+  },
+  projects: {
+    title: 'Projetos',
+    viewRepo: 'Repositório',
+    viewDemo: 'Demo',
+    stack: 'Stack',
+    period: 'Período',
+    status: {
+      active: 'Em andamento',
+      completed: 'Concluído',
+      archived: 'Arquivado',
+      placeholder: 'Em breve',
+    },
+    empty: 'Nenhum projeto encontrado.',
+  },
+  sidebar: {
+    contact: 'Contato',
+    links: 'Links',
+  },
+  timeline: {
+    kinds: {
+      education: 'Formação',
+      experience: 'Experiência',
+      project: 'Projeto',
+      research: 'Pesquisa',
+      publication: 'Publicação',
+      release: 'Release',
+      other: 'Outro',
+    },
+  },
+} as const

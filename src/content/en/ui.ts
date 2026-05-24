@@ -1,0 +1,62 @@
+export const ui = {
+  nav: {
+    about: 'About',
+    cv: 'CV',
+    projects: 'Projects',
+  },
+  lang: {
+    pt: 'PT',
+    en: 'EN',
+    switch: 'Language',
+  },
+  about: {
+    title: 'About',
+    intro: 'Introduction',
+    timeline: 'Timeline',
+    placeholder: 'Coming soon',
+  },
+  cv: {
+    title: 'Curriculum Vitae',
+    print: 'Print / Save as PDF',
+    education: 'Education',
+    experience: 'Experience',
+    research: 'Research',
+    projects: 'Highlighted projects',
+    skills: 'Skills',
+    softSkills: 'Soft skills',
+    hardSkills: 'Hard skills',
+    publications: 'Publications and preprints',
+    volunteering: 'Volunteering and leadership',
+    contact: 'Contact',
+    placeholder: 'To be filled',
+  },
+  projects: {
+    title: 'Projects',
+    viewRepo: 'Repository',
+    viewDemo: 'Demo',
+    stack: 'Stack',
+    period: 'Period',
+    status: {
+      active: 'In progress',
+      completed: 'Completed',
+      archived: 'Archived',
+      placeholder: 'Coming soon',
+    },
+    empty: 'No projects found.',
+  },
+  sidebar: {
+    contact: 'Contact',
+    links: 'Links',
+  },
+  timeline: {
+    kinds: {
+      education: 'Education',
+      experience: 'Experience',
+      project: 'Project',
+      research: 'Research',
+      publication: 'Publication',
+      release: 'Release',
+      other: 'Other',
+    },
+  },
+} as const

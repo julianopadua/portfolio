@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.DS_Store
+docs/
+*.local.md
+AGENTS.md
+MEMORY.md
+SECURITY.md
+ARCHITECTURE.md
+CONTRIBUTING.md
+.agent/
+.cursor/
+plans/

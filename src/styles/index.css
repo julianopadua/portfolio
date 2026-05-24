@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+@import './print.css';
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+  --color-surface: #fafaf9;
+  --color-ink: #1c1917;
+  --color-muted: #57534e;
+  --color-border: #e7e5e4;
+  --color-accent: #44403c;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--color-surface)] font-sans text-[var(--color-ink)] antialiased;
+  }
+}
