@@ -12,7 +12,12 @@ export function CvPage() {
         <SectionTitle as="h1">{t.cv.title}</SectionTitle>
         <CvPrintActions />
       </div>
-      <CvDocument />
+
+      {/* Tela: corpo embedado, sem cabeçalho do PDF */}
+      <CvDocument variant="embed" />
+
+      {/* Impressão / PDF: documento A4 completo (estilo Victor) */}
+      <CvDocument variant="print" id="cv-print" className="print-only" />
     </div>
   )
 }

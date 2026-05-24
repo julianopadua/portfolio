@@ -1,6 +1,6 @@
 @media print {
   @page {
-    size: A4;
+    size: A4 portrait;
     margin: 0;
   }
 
@@ -26,8 +26,8 @@
     display: block !important;
   }
 
-  .cv-print-cover {
-    margin-bottom: 4mm;
+  .cv-document--embed {
+    display: none !important;
   }
 
   .min-h-screen > div {
@@ -38,61 +38,139 @@
     gap: 0 !important;
   }
 
-  main {
+  main,
+  .cv-page,
+  .cv-main {
     max-width: none !important;
     padding: 0 !important;
     margin: 0 !important;
-  }
-
-  .cv-page {
     background: white !important;
-    padding: 0 !important;
   }
 
-  .cv-document {
+  #cv-print.cv-document--print {
     width: 210mm !important;
-    max-width: none !important;
-    min-height: auto !important;
-    margin: 0 auto !important;
-    background: #ffffff !important;
-    box-shadow: none !important;
+    max-width: 210mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
     border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    font-size: 8.9pt !important;
+    line-height: 1.18 !important;
   }
 
-  .cv-page-sheet {
-    width: 210mm;
-    min-height: 297mm;
-    padding: 11mm 12mm;
-    box-sizing: border-box;
-    page-break-after: always;
-    break-after: page;
-    border-top: none !important;
+  .cv-document--print .cv-page-sheet {
+    width: 210mm !important;
+    max-width: 210mm !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 10mm 11mm !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
   }
 
-  .cv-page-sheet:last-child {
-    page-break-after: auto;
-    break-after: auto;
+  .cv-document--print .cv-page-sheet--1 {
+    page-break-after: always !important;
+    break-after: page !important;
   }
 
-  .cv-avoid-break,
-  .cv-experience,
-  .cv-compact,
-  .cv-volunteer,
-  .cv-achievement,
-  .cv-edu-item,
-  .cv-cert-item,
-  .cv-language,
-  .cv-interest {
-    break-inside: avoid;
+  .cv-document--print .cv-page-sheet--2 {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  /* Header: nome/contatos à esquerda, foto à direita */
+  .cv-document--print .cv-header {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    gap: 6mm !important;
+    align-items: start !important;
+    margin-bottom: 3mm !important;
+  }
+
+  .cv-document--print .cv-header__photo {
+    width: 34mm !important;
+    height: 34mm !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: center 28% !important;
+    justify-self: end !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  .cv-document--print .cv-header > div:first-child {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .cv-document--print .cv-header__name {
+    font-size: 24pt !important;
+  }
+
+  .cv-document--print .cv-header__headline {
+    font-size: 10pt !important;
+  }
+
+  .cv-document--print .cv-summary {
+    font-size: 8.8pt !important;
+    margin: 0 0 4mm !important;
+  }
+
+  /* Grades 2 colunas (estilo Victor) */
+  .cv-document--print .cv-grid-page-1 {
+    display: grid !important;
+    grid-template-columns: 1.35fr 0.85fr !important;
+    gap: 7mm !important;
+    align-items: start !important;
+  }
+
+  .cv-document--print .cv-grid-page-2 {
+    display: grid !important;
+    grid-template-columns: 0.85fr 1.35fr !important;
+    gap: 7mm !important;
+    align-items: start !important;
+  }
+
+  .cv-document--print .cv-col {
+    min-width: 0 !important;
+  }
+
+  .cv-document--print .cv-section {
+    margin-bottom: 4mm !important;
+  }
+
+  .cv-document--print .cv-section-title {
+    font-size: 15.5pt !important;
+    margin-bottom: 3mm !important;
+  }
+
+  .cv-document--print .cv-section-title--compact {
+    font-size: 14pt !important;
+  }
+
+  .cv-document--print .cv-experience__bullets,
+  .cv-document--print .cv-volunteer__bullets {
+    font-size: 8.6pt !important;
+  }
+
+  .cv-document--print .cv-experience,
+  .cv-document--print .cv-volunteer,
+  .cv-document--print .cv-achievement,
+  .cv-document--print .cv-section {
+    break-inside: avoid-page;
     page-break-inside: avoid;
   }
 
-  #cv-print {
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-    box-shadow: none !important;
+  /* Idiomas/certificações podem quebrar linha — evita empurrar bloco inteiro */
+  .cv-document--print .cv-language,
+  .cv-document--print .cv-compact,
+  .cv-document--print .cv-edu-item,
+  .cv-document--print .cv-cert-item,
+  .cv-document--print .cv-interest,
+  .cv-document--print .cv-chip {
+    break-inside: auto;
+    page-break-inside: auto;
   }
 
   a[href]::after {

@@ -102,8 +102,8 @@ export const cvDocument: CvDocumentData = {
       id: 'integralab',
       company: 'IntegraLab · Whirlpool',
       title: {
-        pt: 'Projeto R&D (ciclos 2025–2026) — IoT, visão computacional e full stack',
-        en: 'R&D Project (2025–2026 cycles) — IoT, computer vision, and full stack',
+        pt: 'Líder de Projeto',
+        en: 'Project Leader',
       },
       period: { pt: 'Set 2025 – Atual', en: 'Sep 2025 – Present' },
       location: { pt: 'UFSCar · São Carlos, SP', en: 'UFSCar · São Carlos, SP' },
@@ -131,7 +131,7 @@ export const cvDocument: CvDocumentData = {
     { label: { pt: 'Power BI', en: 'Power BI' } },
     { label: { pt: 'Splunk', en: 'Splunk' } },
     { label: { pt: 'React / TypeScript', en: 'React / TypeScript' } },
-    { label: { pt: 'Dados ambientais', en: 'Environmental data' } },
+    { label: { pt: 'Dados ambientais e geoespaciais', en: 'Environmental & geospatial data' } },
   ],
 
   languages: [
@@ -223,11 +223,14 @@ export const cvDocument: CvDocumentData = {
 
   interests: [
     {
-      id: 'history-philosophy',
-      title: { pt: 'História e filosofia', en: 'History and philosophy' },
+      id: 'history-economics-philosophy',
+      title: {
+        pt: 'História, economia e filosofia',
+        en: 'History, Economics and Philosophy',
+      },
       description: {
-        pt: 'História econômica e da filosofia; leitura de obras originais de filósofos e economistas clássicos.',
-        en: 'Economic and intellectual history; reading original works by classical philosophers and economists.',
+        pt: 'Leitura de obras originais de filósofos e economistas clássicos; história econômica e intelectual.',
+        en: 'Reading original works by classical philosophers and economists; economic and intellectual history.',
       },
     },
     {
