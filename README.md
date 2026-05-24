@@ -1,4 +1,4 @@
-# Portfolio (React)
+# Portfolio
 
 Minimalist personal portfolio. 
 
