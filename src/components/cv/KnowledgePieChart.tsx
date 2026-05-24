@@ -8,10 +8,10 @@ interface KnowledgePieChartProps {
 }
 
 const DEFAULT_COLORS = ['#008d9f', '#4a6a6e', '#8a9a9c', '#b5c4c6']
-const SIZE = 120
+const SIZE = 160
 const CENTER = SIZE / 2
-const RADIUS = 44
-const INNER_RADIUS = 26
+const RADIUS = 59
+const INNER_RADIUS = 35
 
 function normalizeSlices(slices: KnowledgeSlice[]): { slice: KnowledgeSlice; value: number }[] {
   const total = slices.reduce((sum, s) => sum + s.value, 0)
@@ -102,7 +102,7 @@ export function KnowledgePieChart({ slices, summary }: KnowledgePieChartProps) {
                   y={seg.labelPos.y}
                   textAnchor="middle"
                   dominantBaseline="middle"
-                  fontSize="8"
+                  fontSize="10"
                   fontWeight="700"
                   fill="#fff"
                 >
