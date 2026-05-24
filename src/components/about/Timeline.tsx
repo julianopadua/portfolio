@@ -7,7 +7,7 @@ import { SectionTitle } from '../ui/SectionTitle'
 import { Tag } from '../ui/Tag'
 
 function formatPeriod(start: string, end?: string): string {
-  if (end) return `${start} — ${end}`
+  if (end) return `${start} - ${end}`
   return start
 }
 

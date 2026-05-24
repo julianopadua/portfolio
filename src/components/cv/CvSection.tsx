@@ -66,7 +66,7 @@ export function CvSkillList({ skills, ordered }: { skills: CvSkill[]; ordered?: 
         <li key={i} className="text-sm leading-relaxed">
           <span className="font-medium">{pickLocalized(skill.name, locale)}</span>
           {skill.detail && (
-            <span className="text-[var(--color-muted)]"> — {pickLocalized(skill.detail, locale)}</span>
+            <span className="text-[var(--color-muted)]"> - {pickLocalized(skill.detail, locale)}</span>
           )}
         </li>
       ))}
@@ -89,7 +89,7 @@ export function CvPublicationList({ items }: { items: CvPublication[] }) {
             <span className="font-medium">{pickLocalized(pub.title, locale)}</span>
           )}
           {pub.authors && (
-            <span className="text-[var(--color-muted)]"> — {pickLocalized(pub.authors, locale)}</span>
+            <span className="text-[var(--color-muted)]"> - {pickLocalized(pub.authors, locale)}</span>
           )}
           {pub.venue && (
             <span className="text-[var(--color-muted)]">. {pickLocalized(pub.venue, locale)}</span>

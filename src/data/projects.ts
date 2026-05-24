@@ -120,8 +120,8 @@ export const projects: ProjectItem[] = [
   {
     id: 'tcc-cerrado-project',
     name: {
-      pt: 'TCC — Focos de incêndio no Cerrado',
-      en: 'Thesis — Cerrado fire hotspots',
+      pt: 'TCC: focos de incêndio no Cerrado',
+      en: 'Thesis: Cerrado fire hotspots',
     },
     shortDescription: {
       pt: 'Modelagem preditiva e ranking de focos de incêndio.',
@@ -135,30 +135,22 @@ export const projects: ProjectItem[] = [
     placeholder: true,
   },
   {
-    id: 'instituto-forest-project',
-    name: { pt: 'Instituto Forest', en: 'Instituto Forest' },
-    shortDescription: {
-      pt: 'Projeto ambiental e de pesquisa — detalhes em breve.',
-      en: 'Environmental and research project — details coming soon.',
-    },
-    stack: ['Python'],
-    status: 'placeholder',
-    tags: ['environment', 'research'],
-    links: {},
-    placeholder: true,
-  },
-  {
     id: 'integra-lab-project',
     name: { pt: 'IntegraLab / Whirlpool', en: 'IntegraLab / Whirlpool' },
     shortDescription: {
-      pt: 'Projeto acadêmico-industrial — detalhes em breve.',
-      en: 'Academic-industry project — details coming soon.',
+      pt: 'Liderança do projeto acadêmico-industrial IntegraLab (UFSCar + Whirlpool).',
+      en: 'Leadership of the IntegraLab academic-industry project (UFSCar + Whirlpool).',
     },
-    stack: [],
-    status: 'placeholder',
-    tags: ['industry'],
+    longDescription: {
+      pt: 'Projeto de engenharia com entregas em equipe entre universidade e indústria.',
+      en: 'Engineering project with team deliverables across university and industry.',
+    },
+    stack: ['Engineering', 'Project Management'],
+    status: 'active',
+    period: '2025-2026',
+    tags: ['industry', 'ufscar'],
     links: {},
-    placeholder: true,
+    featured: true,
   },
   {
     id: 'data-automation-project',

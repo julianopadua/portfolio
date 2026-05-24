@@ -1,6 +1,6 @@
 # Portfolio (React)
 
-Modern personal portfolio — TypeScript, React, Vite, Tailwind.
+Modern personal portfolio - TypeScript, React, Vite, Tailwind.
 
 ## Commands
 
@@ -13,9 +13,9 @@ npm run preview
 
 ## Routes
 
-- `/about` — introduction and timeline
-- `/cv` — curriculum (browser print → PDF)
-- `/projects` — project grid
+- `/about` - introduction and timeline
+- `/cv` - curriculum (browser print to PDF)
+- `/projects` - project grid
 
 Language toggle: PT / EN (top right).
 

@@ -3,25 +3,25 @@ import type { Profile } from './types'
 export const profile: Profile = {
   name: 'Juliano Pádua',
   tagline: {
-    pt: 'Estudante de Engenharia da Computação · UFSCar',
-    en: 'Computer Engineering Student · UFSCar',
+    pt: 'Engenharia da Computação (UFSCar) · Estagiário em Fraud Analytics na InComm Payments',
+    en: 'Computer Engineering (UFSCar) · Fraud Analytics Intern at InComm Payments',
   },
   bio: [
     {
-      pt: 'Sou estudante de Engenharia da Computação na UFSCar, com interesse em ciência de dados, programação e mercados financeiros. Busco integrar tecnologia e análise de dados para resolver problemas reais.',
-      en: 'I am a Computer Engineering student at UFSCar with interests in data science, programming, and financial markets. I seek to integrate technology and data analysis to solve real-world problems.',
+      pt: 'Sou estudante de Engenharia da Computação na UFSCar, com experiência em ciência de dados, análise de mercado e desenvolvimento de soluções orientadas a resultados. Atuo na interseção entre engenharia de software, machine learning, estatística e BI, com exposição a inteligência de mercado e prevenção a fraudes.',
+      en: 'I am a Computer Engineering student at UFSCar with experience in data science, market analysis, and the development of results-oriented solutions. I work at the intersection of software engineering, machine learning, statistics, and BI, with exposure to market intelligence and fraud prevention.',
     },
     {
-      pt: 'Como monitor e tutor na UFSCar, apoiei estudantes em Introdução à Computação e Geometria Analítica, desenvolvendo comunicação clara de conceitos técnicos e matemáticos.',
-      en: 'As a monitor and tutor at UFSCar, I supported students in Introduction to Computing and Analytical Geometry, developing clear communication of technical and mathematical concepts.',
+      pt: 'Na UFSCar, fui monitor de Introdução à Computação, tutor de Geometria Analítica, líder do projeto IntegraLab (Whirlpool + UFSCar) e tutor de Redes Neurais na diretoria de projetos PANDA.',
+      en: 'At UFSCar, I served as a Teaching Assistant for Introduction to Computing, a tutor for Analytic Geometry, Project Leader for the IntegraLab project (Whirlpool + UFSCar), and Neural Networks tutor at the PANDA projects directorate.',
     },
     {
-      pt: 'Profissionalmente, atuei em estágios na Leadfy Imob e na HedgePoint Global Markets, e contribuo como desenvolvedor voluntário na All Juice Capital (startup no Reino Unido).',
-      en: 'Professionally, I interned at Leadfy Imob and HedgePoint Global Markets, and contribute as a volunteer developer at All Juice Capital (UK startup).',
+      pt: 'Profissionalmente, estagiei na Leadfy Imob, na HedgePoint Global Markets e no Laboratório Maricondi; atuei como desenvolvedor full-stack na All Juice Capital. Atualmente sou estagiário em Fraud Business Analytics na InComm Payments, em ambiente internacional.',
+      en: 'Professionally, I interned at Leadfy Imob, HedgePoint Global Markets, and Laboratório Maricondi; worked as a full-stack developer at All Juice Capital. I am currently a Fraud Business Analytics Intern at InComm Payments in an English-only environment.',
     },
     {
-      pt: 'Crio projetos em Python e outras tecnologias, disponíveis no GitHub. Estou comprometido com aprendizado contínuo e soluções orientadas a dados.',
-      en: 'I build projects in Python and other technologies, available on GitHub. I am committed to continuous learning and data-driven solutions.',
+      pt: 'Domino Python, SQL, Power BI, pipelines de dados e ferramentas de analytics; busco aplicar engenharia e dados em contextos financeiros, de mercado e de prevenção a fraudes.',
+      en: 'I work with Python, SQL, Power BI, data pipelines, and analytics tools; I aim to apply engineering and data skills in finance, markets, and fraud prevention contexts.',
     },
   ],
   location: {
@@ -29,7 +29,7 @@ export const profile: Profile = {
     en: 'São Carlos, SP, Brazil',
   },
   email: 'julianofpadua@gmail.com',
-  phone: '+55 (34) 99910-9610',
+  phone: '+55 (34) 99911-9610',
   links: {
     github: 'https://github.com/julianopadua',
     linkedin: 'https://www.linkedin.com/in/juliano-pádua-82b301226/',

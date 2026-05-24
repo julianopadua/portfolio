@@ -50,13 +50,17 @@ export function CvDocument() {
         <CvSkillList skills={cvHardSkills} />
       </CvSectionBlock>
 
-      <CvSectionBlock title={t.cv.publications}>
-        <CvPublicationList items={cvPublications} />
-      </CvSectionBlock>
+      {cvPublications.length > 0 && (
+        <CvSectionBlock title={t.cv.publications}>
+          <CvPublicationList items={cvPublications} />
+        </CvSectionBlock>
+      )}
 
-      <CvSectionBlock title={t.cv.volunteering}>
-        <CvEntryList entries={cvVolunteering} />
-      </CvSectionBlock>
+      {cvVolunteering.length > 0 && (
+        <CvSectionBlock title={t.cv.volunteering}>
+          <CvEntryList entries={cvVolunteering} />
+        </CvSectionBlock>
+      )}
 
       <CvSectionBlock title={t.cv.contact}>
         <ul className="text-sm space-y-1">

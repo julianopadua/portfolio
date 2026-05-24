@@ -22,6 +22,9 @@ export interface TimelineEvent {
   href?: string
   tags?: string[]
   placeholder?: boolean
+  logo?: string
+  displayPeriod?: LocalizedString
+  sortOrder?: number
 }
 
 export interface CvEntry {

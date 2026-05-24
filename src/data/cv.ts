@@ -5,45 +5,107 @@ export const cvEducation: CvEntry[] = [
     id: 'ufscar-bsc',
     title: {
       pt: 'Bacharelado em Engenharia da Computação',
-      en: 'Bachelor of Science in Computer Engineering',
+      en: "Bachelor's in Computer Engineering",
     },
     organization: {
       pt: 'Universidade Federal de São Carlos (UFSCar)',
       en: 'Federal University of São Carlos (UFSCar)',
     },
     location: { pt: 'São Carlos, SP', en: 'São Carlos, SP' },
-    period: { pt: 'Em andamento', en: 'In progress' },
+    period: { pt: 'Ago 2021 - Jul 2026', en: 'Aug 2021 - Jul 2026' },
     description: {
-      pt: 'Formação com ênfase em programação, estruturas de dados, sistemas e projetos aplicados.',
-      en: 'Degree with emphasis on programming, data structures, systems, and applied projects.',
+      pt: 'Formação em computação com projetos aplicados em software, dados e sistemas.',
+      en: 'Computer engineering degree with applied projects in software, data, and systems.',
+    },
+  },
+  {
+    id: 'ufscar-ta',
+    title: {
+      pt: 'Monitor de Introdução à Computação',
+      en: 'Introduction to Computing Teaching Assistant',
+    },
+    organization: { pt: 'UFSCar', en: 'UFSCar' },
+    period: { pt: 'Fev 2022 - Mai 2022', en: 'Feb 2022 - May 2022' },
+    description: {
+      pt: 'Monitoria em disciplina introdutória de computação.',
+      en: 'Teaching assistant for introductory computing course.',
+    },
+  },
+  {
+    id: 'ufscar-tutor-geometry',
+    title: {
+      pt: 'Tutor de Geometria Analítica',
+      en: 'Analytic Geometry Tutor',
+    },
+    organization: { pt: 'UFSCar', en: 'UFSCar' },
+    period: { pt: 'Mai 2023 - Set 2023', en: 'May 2023 - Sep 2023' },
+    description: {
+      pt: 'Tutoria em Geometria Analítica.',
+      en: 'Tutoring in Analytic Geometry.',
+    },
+  },
+  {
+    id: 'integralab-leader',
+    title: {
+      pt: 'Líder de projeto IntegraLab',
+      en: 'IntegraLab Project Leader',
+    },
+    organization: { pt: 'Whirlpool + UFSCar', en: 'Whirlpool + UFSCar' },
+    period: { pt: 'Set 2025 - Jul 2026', en: 'Sep 2025 - Jul 2026' },
+    description: {
+      pt: 'Liderança do projeto acadêmico-industrial IntegraLab.',
+      en: 'Led the IntegraLab academic-industry project.',
+    },
+  },
+  {
+    id: 'panda-tutor',
+    title: {
+      pt: 'Tutor de Redes Neurais (PANDA)',
+      en: 'Neural Networks Tutor (PANDA)',
+    },
+    organization: { pt: 'Diretoria de Projetos PANDA, UFSCar', en: 'PANDA Projects Directorate, UFSCar' },
+    period: { pt: 'Set 2025 - Atual', en: 'Sep 2025 - Present' },
+    description: {
+      pt: 'Tutoria em Redes Neurais.',
+      en: 'Tutoring in Neural Networks.',
     },
   },
 ]
 
 export const cvExperience: CvEntry[] = [
   {
-    id: 'ufscar-tutor',
+    id: 'incomm',
     title: {
-      pt: 'Monitor de Introdução à Computação e Tutor de Geometria Analítica',
-      en: 'Introduction to Computing Monitor and Analytical Geometry Tutor',
+      pt: 'Estagiário em Fraud Business Analytics',
+      en: 'Fraud Business Analytics Intern',
     },
-    organization: { pt: 'UFSCar', en: 'UFSCar' },
-    period: { pt: 'Acadêmico', en: 'Academic' },
+    organization: { pt: 'InComm Payments', en: 'InComm Payments' },
+    period: { pt: 'Nov 2025 - Atual', en: 'Nov 2025 - Present' },
     description: {
-      pt: 'Monitoria em Python e fundamentos de programação; tutoria em Geometria Analítica e resolução de problemas.',
-      en: 'Tutoring in Python and programming fundamentals; Analytical Geometry tutoring and problem-solving support.',
+      pt: 'Monitoramento de padrões de fraude e apoio à prevenção via análise de dados, em ambiente 100% em inglês.',
+      en: 'Monitored fraud patterns and supported prevention through data analysis in an English-only environment.',
     },
   },
   {
-    id: 'leadfy',
-    title: { pt: 'Estagiário de Suporte', en: 'Support Intern' },
-    organization: { pt: 'Leadfy Imob', en: 'Leadfy Imob' },
-    period: { pt: 'Mai 2024 – Ago 2024', en: 'May 2024 – Aug 2024' },
+    id: 'maricondi',
+    title: { pt: 'Estagiário de Projetos', en: 'Projects Intern' },
+    organization: { pt: 'Laboratório Maricondi', en: 'Laboratório Maricondi' },
+    period: { pt: 'Set 2025 - Nov 2025', en: 'Sep 2025 - Nov 2025' },
     description: {
-      pt: 'Atendimento ao cliente, suporte técnico, ClickUp e práticas Kanban em ambiente ágil.',
-      en: 'Customer service, technical support, ClickUp and Kanban practices in an agile environment.',
+      pt: 'Dashboards Power BI e consultas SQL para visibilidade de KPIs e qualidade de dados.',
+      en: 'Built and maintained Power BI dashboards and SQL queries for KPI visibility and data quality.',
     },
-    href: 'https://leadfy-imob.com.br/',
+  },
+  {
+    id: 'all-juice',
+    title: { pt: 'Desenvolvedor Full-Stack', en: 'Full-Stack Developer' },
+    organization: { pt: 'All Juice Capital', en: 'All Juice Capital' },
+    period: { pt: 'Mai 2025 - Set 2025', en: 'May 2025 - Sep 2025' },
+    description: {
+      pt: 'Desenvolvimento full-stack, pipelines de dados e automações para analytics de trading e ferramentas internas.',
+      en: 'Full-stack development, data pipelines, and automation for trading analytics and internal tools.',
+    },
+    href: 'https://www.alljuicecapital.com/',
   },
   {
     id: 'hedgepoint',
@@ -55,33 +117,23 @@ export const cvExperience: CvEntry[] = [
       pt: 'HedgePoint Global Markets',
       en: 'HedgePoint Global Markets',
     },
-    period: { pt: 'Set 2024 – Mar 2025', en: 'Sep 2024 – Mar 2025' },
+    period: { pt: 'Set 2024 - Mar 2025', en: 'Sep 2024 - Mar 2025' },
     description: {
-      pt: 'Python, Excel/VBA, web scraping, organização de grandes volumes de dados e análise de commodities e hedging.',
-      en: 'Python, Excel/VBA, web scraping, large-scale data organization, and commodities/hedging market analysis.',
+      pt: 'Automação de relatórios e análises com Python, SQL, Excel e VBA; fluxos reutilizáveis e interface entre TI e Inteligência de Mercado.',
+      en: 'Automated reporting and analysis with Python, SQL, Excel, and VBA; reusable workflows and bridge between IT and Market Intelligence.',
     },
     href: 'https://hedgepointglobal.com/',
   },
   {
-    id: 'all-juice',
-    title: { pt: 'Desenvolvedor voluntário', en: 'Volunteer Developer' },
-    organization: { pt: 'All Juice Capital', en: 'All Juice Capital' },
-    period: { pt: 'Mai 2025 – Atual', en: 'May 2025 – Present' },
+    id: 'leadfy',
+    title: { pt: 'Estagiário de Suporte Técnico', en: 'Technical Support Intern' },
+    organization: { pt: 'Leadfy Imob', en: 'Leadfy Imob' },
+    period: { pt: 'Mai 2024 - Set 2024', en: 'May 2024 - Sep 2024' },
     description: {
-      pt: 'Python, TypeScript, trading systems, Kanban, gestão de equipe, onboarding e documentação técnica.',
-      en: 'Python, TypeScript, trading systems, Kanban, team management, onboarding, and technical documentation.',
+      pt: 'Suporte técnico, troubleshooting e documentação em fluxo ágil; apoio a produto com machine learning.',
+      en: 'Technical support, troubleshooting, and documentation in agile workflow; assisted ML-related product development.',
     },
-    href: 'https://www.alljuicecapital.com/',
-  },
-  {
-    id: 'incomm',
-    title: { pt: 'InComm Payments', en: 'InComm Payments' },
-    period: { pt: 'A confirmar', en: 'TBD' },
-    description: {
-      pt: 'Detalhes da experiência a serem adicionados.',
-      en: 'Experience details to be added.',
-    },
-    placeholder: true,
+    href: 'https://leadfy-imob.com.br/',
   },
 ]
 
@@ -89,8 +141,8 @@ export const cvResearch: CvEntry[] = [
   {
     id: 'tcc-cerrado',
     title: {
-      pt: 'TCC — Previsão e ranking de focos de incêndio no Cerrado',
-      en: 'Thesis — Fire hotspot prediction and ranking in the Cerrado',
+      pt: 'TCC: previsão e ranking de focos de incêndio no Cerrado',
+      en: 'Thesis: fire hotspot prediction and ranking in the Cerrado',
     },
     organization: { pt: 'UFSCar', en: 'UFSCar' },
     period: { pt: 'Em andamento', en: 'In progress' },
@@ -100,101 +152,102 @@ export const cvResearch: CvEntry[] = [
     },
     placeholder: true,
   },
-  {
-    id: 'instituto-forest-research',
-    title: { pt: 'Instituto Forest', en: 'Instituto Forest' },
-    period: { pt: 'A confirmar', en: 'TBD' },
-    description: {
-      pt: 'Atividades de pesquisa — detalhes a serem adicionados.',
-      en: 'Research activities — details to be added.',
-    },
-    placeholder: true,
-  },
 ]
 
 export const cvProjectsHighlight: CvEntry[] = [
   {
-    id: 'integra-lab-cv',
-    title: { pt: 'IntegraLab / Whirlpool', en: 'IntegraLab / Whirlpool' },
-    period: { pt: 'A confirmar', en: 'TBD' },
+    id: 'integralab-cv',
+    title: { pt: 'IntegraLab (Whirlpool + UFSCar)', en: 'IntegraLab (Whirlpool + UFSCar)' },
+    period: { pt: 'Set 2025 - Jul 2026', en: 'Sep 2025 - Jul 2026' },
     description: {
-      pt: 'Projeto acadêmico-industrial — resumo a ser adicionado.',
-      en: 'Academic-industry project — summary to be added.',
+      pt: 'Projeto acadêmico-industrial com liderança de equipe e entregas de engenharia.',
+      en: 'Academic-industry project with team leadership and engineering deliverables.',
     },
-    placeholder: true,
   },
 ]
 
 export const cvSoftSkills: CvSkill[] = [
   {
-    name: { pt: 'Comunicação clara e eficaz', en: 'Clear and effective communication' },
+    name: { pt: 'Comunicação em inglês (ambiente profissional)', en: 'Professional English communication' },
     detail: {
-      pt: 'Tutoria acadêmica, atendimento e reuniões estratégicas.',
-      en: 'Academic tutoring, customer service, and strategic meetings.',
+      pt: 'Experiência em ambiente internacional na InComm Payments.',
+      en: 'Experience in an international environment at InComm Payments.',
     },
   },
   {
-    name: { pt: 'Trabalho em equipe', en: 'Teamwork' },
+    name: { pt: 'Trabalho em equipe e liderança de projeto', en: 'Teamwork and project leadership' },
     detail: {
-      pt: 'Projetos acadêmicos, suporte e ambientes multidisciplinares.',
-      en: 'Academic projects, support roles, and multidisciplinary environments.',
+      pt: 'IntegraLab, PANDA e projetos multidisciplinares.',
+      en: 'IntegraLab, PANDA, and multidisciplinary projects.',
     },
   },
   {
-    name: { pt: 'Resolução criativa de problemas', en: 'Creative problem-solving' },
+    name: { pt: 'Resolução de problemas orientada a dados', en: 'Data-driven problem solving' },
   },
   {
     name: { pt: 'Gestão de tempo', en: 'Time management' },
   },
-  {
-    name: { pt: 'Liderança e mentoria', en: 'Leadership and mentoring' },
-    detail: {
-      pt: 'Onboarding e documentação técnica.',
-      en: 'Onboarding and technical documentation.',
-    },
-  },
-  {
-    name: { pt: 'Adaptabilidade', en: 'Adaptability' },
-  },
 ]
 
 export const cvHardSkills: CvSkill[] = [
-  { name: { pt: 'Python', en: 'Python' } },
-  { name: { pt: 'TypeScript', en: 'TypeScript' } },
-  { name: { pt: 'Trading Systems', en: 'Trading Systems' } },
-  { name: { pt: 'Full-Stack Development', en: 'Full-Stack Development' } },
-  { name: { pt: 'Metodologias Ágeis (Kanban, ClickUp)', en: 'Agile Methodologies (Kanban, ClickUp)' } },
   {
-    name: { pt: 'Conhecimento econômico (hedging, commodities)', en: 'Economic knowledge (hedging, commodities)' },
+    name: { pt: 'Data Analytics', en: 'Data Analytics' },
+    detail: {
+      pt: 'EDA, feature engineering, KPIs, Power BI (DAX, Power Query), Excel, Accertify, Splunk',
+      en: 'EDA, feature engineering, KPIs, Power BI (DAX, Power Query), Excel, Accertify, Splunk',
+    },
   },
-  { name: { pt: 'SQL', en: 'SQL' } },
-  { name: { pt: 'Excel e VBA', en: 'Excel and VBA' } },
-  { name: { pt: 'Git / GitHub', en: 'Git / GitHub' } },
-  { name: { pt: 'C e C++', en: 'C and C++' } },
-  { name: { pt: 'HTML e CSS', en: 'HTML and CSS' } },
+  {
+    name: { pt: 'Data Science', en: 'Data Science' },
+    detail: {
+      pt: 'Aprendizado supervisionado, avaliação de modelos',
+      en: 'Supervised learning, model evaluation',
+    },
+  },
+  {
+    name: { pt: 'Programação', en: 'Programming' },
+    detail: {
+      pt: 'Python, SQL, VBA, TypeScript, JavaScript',
+      en: 'Python, SQL, VBA, TypeScript, JavaScript',
+    },
+  },
+  {
+    name: { pt: 'Data Engineering', en: 'Data Engineering' },
+    detail: {
+      pt: 'Web scraping, ETL, consolidação de dados, agendamento, logging',
+      en: 'Web scraping, ETL, data consolidation, scheduling, logging',
+    },
+  },
+  {
+    name: { pt: 'Bancos de dados e ferramentas', en: 'Databases and tools' },
+    detail: {
+      pt: 'PostgreSQL, SQL Server, SSAS, Git, GitHub',
+      en: 'PostgreSQL, SQL Server, SSAS, Git, GitHub',
+    },
+  },
+  {
+    name: { pt: 'Web', en: 'Web' },
+    detail: {
+      pt: 'Next.js, React, Tailwind CSS, REST APIs',
+      en: 'Next.js, React, Tailwind CSS, REST APIs',
+    },
+  },
+  {
+    name: { pt: 'Finanças', en: 'Finance' },
+    detail: {
+      pt: 'Commodities, trading systems, prevenção a fraudes',
+      en: 'Commodities, trading systems, fraud prevention',
+    },
+  },
+  {
+    name: { pt: 'Idiomas', en: 'Languages' },
+    detail: {
+      pt: 'Português (nativo), inglês (avançado), espanhol (intermediário)',
+      en: 'Portuguese (native), English (advanced), Spanish (intermediate)',
+    },
+  },
 ]
 
-export const cvPublications: CvPublication[] = [
-  {
-    id: 'pub-placeholder',
-    title: {
-      pt: 'Publicações e preprints — a serem adicionados',
-      en: 'Publications and preprints — to be added',
-    },
-    placeholder: true,
-  },
-]
+export const cvPublications: CvPublication[] = []
 
-export const cvVolunteering: CvEntry[] = [
-  {
-    id: 'all-juice-volunteer-cv',
-    title: { pt: 'Desenvolvedor voluntário', en: 'Volunteer Developer' },
-    organization: { pt: 'All Juice Capital', en: 'All Juice Capital' },
-    period: { pt: 'Mai 2025 – Atual', en: 'May 2025 – Present' },
-    description: {
-      pt: 'Contribuição voluntária em produtos de software para startup no Reino Unido.',
-      en: 'Volunteer contribution to software products for a UK-based startup.',
-    },
-    href: 'https://www.alljuicecapital.com/',
-  },
-]
+export const cvVolunteering: CvEntry[] = []
