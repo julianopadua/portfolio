@@ -1,6 +1,7 @@
 import type { AchievementItem } from '../../data/types'
 import { pickLocalized } from '../../lib/localized'
 import { useLocale } from '../../i18n/useLocale'
+import { CvLinkedText } from './CvLinkedText'
 
 interface AchievementsProps {
   items: AchievementItem[]
@@ -15,7 +16,7 @@ export function Achievements({ items }: AchievementsProps) {
         <article key={item.id} className="cv-achievement cv-avoid-break">
           <p className="cv-achievement__title">
             {item.href ? (
-              <a href={item.href} target="_blank" rel="noopener noreferrer">
+              <a href={item.href} className="cv-link" target="_blank" rel="noopener noreferrer">
                 {pickLocalized(item.title, locale)}
               </a>
             ) : (
@@ -25,12 +26,26 @@ export function Achievements({ items }: AchievementsProps) {
               <>
                 {' '}
                 <span className="cv-achievement__org">
-                  | {pickLocalized(item.organization, locale)}
+                  |{' '}
+                  {item.organizationHref ? (
+                    <a
+                      href={item.organizationHref}
+                      className="cv-link cv-accent"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {pickLocalized(item.organization, locale)}
+                    </a>
+                  ) : (
+                    pickLocalized(item.organization, locale)
+                  )}
                 </span>
               </>
             )}
           </p>
-          <p className="cv-achievement__desc">{pickLocalized(item.description, locale)}</p>
+          <p className="cv-achievement__desc">
+            <CvLinkedText text={pickLocalized(item.description, locale)} />
+          </p>
         </article>
       ))}
     </div>

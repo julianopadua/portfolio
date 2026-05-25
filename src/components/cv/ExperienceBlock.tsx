@@ -16,7 +16,7 @@ export function ExperienceBlock({ experiences }: ExperienceBlockProps) {
         <article key={exp.id} className="cv-experience cv-avoid-break">
           <h3 className="cv-experience__company">
             {exp.href ? (
-              <a href={exp.href} target="_blank" rel="noopener noreferrer">
+              <a href={exp.href} className="cv-link" target="_blank" rel="noopener noreferrer">
                 {exp.company}
               </a>
             ) : (

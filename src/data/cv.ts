@@ -19,7 +19,7 @@ export const cvDocument: CvDocumentData = {
     location: profile.location,
     linkedin: profile.links.linkedin,
     github: profile.links.github,
-    website: 'https://julianopadua.github.io',
+    website: 'https://julianopadua.github.io/portfolio/#/about',
   },
 
   professionalExperience: [
@@ -284,6 +284,7 @@ export const cvDocument: CvDocumentData = {
         en: 'Instituto Forest - open source ecosystem',
       },
       organization: { pt: 'Instituto Forest', en: 'Instituto Forest' },
+      organizationHref: 'https://institutoforest.org',
       description: {
         pt: 'Desenvolvimento do cliente Python forest-data e pipelines de dados abertos ambientais para a API pública do Instituto Forest (institutoforest.org).',
         en: 'Development of the forest-data Python client and open environmental data pipelines for the Instituto Forest public API (institutoforest.org).',

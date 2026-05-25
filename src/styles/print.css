@@ -196,9 +196,20 @@
     content: none !important;
   }
 
-  .cv-header__contact a,
-  .cv-experience__company a {
-    color: inherit !important;
+  .cv-document--print a.cv-link[href],
+  .cv-document--print a.cv-accent[href] {
+    color: #1a5c47 !important;
+    text-decoration: underline !important;
+  }
+
+  .cv-document--print .cv-header__contact .cv-link[href] {
+    color: #1a5c47 !important;
+    text-decoration: underline !important;
+  }
+
+  .cv-document--print .cv-experience__company .cv-link[href] {
+    color: #1a3329 !important;
+    text-decoration: underline !important;
   }
 }
 

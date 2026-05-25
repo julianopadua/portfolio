@@ -16,7 +16,7 @@ export function CompactExperienceList({ items }: CompactExperienceListProps) {
           <div className="cv-compact__row">
             <span className="cv-compact__company">
               {item.href ? (
-                <a href={item.href} target="_blank" rel="noopener noreferrer">
+                <a href={item.href} className="cv-link" target="_blank" rel="noopener noreferrer">
                   {item.company}
                 </a>
               ) : (

@@ -20,7 +20,9 @@ export function CvHeader({ profile }: CvHeaderProps) {
         <div className="cv-header__contacts">
           <span className="cv-header__contact">
             <Mail className="cv-header__contact-icon" size={12} aria-hidden />
-            <a href={`mailto:${profile.email}`}>{profile.email}</a>
+            <a href={`mailto:${profile.email}`} className="cv-link">
+              {profile.email}
+            </a>
           </span>
           {profile.phone && (
             <span className="cv-header__contact">
@@ -34,20 +36,38 @@ export function CvHeader({ profile }: CvHeaderProps) {
           </span>
           <span className="cv-header__contact">
             <Link className="cv-header__contact-icon" size={12} aria-hidden />
-            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
+            <a
+              href={profile.linkedin}
+              className="cv-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              title={profile.linkedin}
+            >
               LinkedIn
             </a>
           </span>
           <span className="cv-header__contact">
             <Code2 className="cv-header__contact-icon" size={12} aria-hidden />
-            <a href={profile.github} target="_blank" rel="noopener noreferrer">
+            <a
+              href={profile.github}
+              className="cv-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              title={profile.github}
+            >
               GitHub
             </a>
           </span>
           {profile.website && (
             <span className="cv-header__contact">
               <Globe className="cv-header__contact-icon" size={12} aria-hidden />
-              <a href={profile.website} target="_blank" rel="noopener noreferrer">
+              <a
+                href={profile.website}
+                className="cv-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                title={profile.website}
+              >
                 Portfolio
               </a>
             </span>

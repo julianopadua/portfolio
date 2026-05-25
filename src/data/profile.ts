@@ -28,7 +28,7 @@ export const profile: Profile = {
   phone: '+55 (34) 99911-9610',
   links: {
     github: 'https://github.com/julianopadua',
-    linkedin: 'https://www.linkedin.com/in/juliano-pádua-82b301226/',
+    linkedin: 'https://www.linkedin.com/in/julianopadua/',
     instagram: 'https://www.instagram.com/_padua20/',
   },
 }
