@@ -180,9 +180,7 @@ export interface AchievementItem {
   id: string
   title: LocalizedString
   organization?: LocalizedString
-  organizationHref?: string
   description: LocalizedString
-  href?: string
 }
 
 export interface KnowledgeSlice {

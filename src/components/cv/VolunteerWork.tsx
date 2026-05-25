@@ -13,15 +13,7 @@ export function VolunteerWork({ items }: VolunteerWorkProps) {
     <div>
       {items.map((item) => (
         <article key={item.id} className="cv-volunteer cv-avoid-break">
-          <p className="cv-volunteer__org">
-            {item.href ? (
-              <a href={item.href} className="cv-link" target="_blank" rel="noopener noreferrer">
-                {pickLocalized(item.organization, locale)}
-              </a>
-            ) : (
-              pickLocalized(item.organization, locale)
-            )}
-          </p>
+          <p className="cv-volunteer__org">{pickLocalized(item.organization, locale)}</p>
           <p className="cv-volunteer__role">{pickLocalized(item.role, locale)}</p>
           <p className="cv-volunteer__meta">
             {pickLocalized(item.period, locale)}

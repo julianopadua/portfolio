@@ -58,7 +58,6 @@ export const cvDocument: CvDocumentData = {
     {
       id: 'hedgepoint',
       company: 'HedgePoint Global Markets',
-      href: 'https://hedgepointglobal.com/',
       location: { pt: 'Campinas, Brasil', en: 'Campinas, Brazil' },
       period: { pt: 'Set 2024 - Mar 2025', en: 'Sep 2024 - Mar 2025' },
       roles: [
@@ -90,7 +89,6 @@ export const cvDocument: CvDocumentData = {
     {
       id: 'leadfy',
       company: 'Leadfy Imob',
-      href: 'https://leadfy-imob.com.br/',
       title: { pt: 'Estagiário de Suporte Técnico', en: 'Technical Support Intern' },
       period: { pt: 'Mai 2024 - Set 2024', en: 'May 2024 - Sep 2024' },
       location: { pt: 'Remoto', en: 'Remote' },
@@ -169,7 +167,6 @@ export const cvDocument: CvDocumentData = {
       },
       period: { pt: 'Ago 2021 - Jul 2026', en: 'Aug 2021 - Jul 2026' },
       location: { pt: 'São Carlos, SP', en: 'São Carlos, SP' },
-      href: 'https://www.ufscar.br/',
     },
   ],
 
@@ -207,7 +204,6 @@ export const cvDocument: CvDocumentData = {
       role: { pt: 'Desenvolvedor voluntário', en: 'Volunteer Developer' },
       period: { pt: 'Mai 2025 - Set 2025', en: 'May 2025 - Sep 2025' },
       location: { pt: 'Remoto · Reino Unido', en: 'Remote · United Kingdom' },
-      href: 'https://www.alljuicecapital.com/',
       bullets: [
         {
           pt: 'Desenvolvimento full-stack com Python e TypeScript para produtos internos e externos da startup.',
@@ -275,7 +271,6 @@ export const cvDocument: CvDocumentData = {
         pt: 'Previsão de focos de incêndio no Cerrado com variáveis climáticas (INMET e BDQueimadas); comparativo de modelos, feature engineering e tratamento de desbalanceamento. Defesa em mar/2026.',
         en: 'Cerrado fire hotspot prediction using climate variables (INMET and INPE records); model comparison, feature engineering, and class imbalance treatment. Defended Mar 2026.',
       },
-      href: 'https://repositorio.ufscar.br/items/969fd627-d894-40be-89fb-b20127ba3f03',
     },
     {
       id: 'instituto-forest',
@@ -284,12 +279,10 @@ export const cvDocument: CvDocumentData = {
         en: 'Instituto Forest - open source ecosystem',
       },
       organization: { pt: 'Instituto Forest', en: 'Instituto Forest' },
-      organizationHref: 'https://institutoforest.org',
       description: {
-        pt: 'Desenvolvimento do cliente Python forest-data e pipelines de dados abertos ambientais para a API pública do Instituto Forest (https://institutoforest.org).',
-        en: 'Development of the forest-data Python client and open environmental data pipelines for the Instituto Forest public API (https://institutoforest.org).',
+        pt: 'Desenvolvimento do cliente Python forest-data e pipelines de dados abertos ambientais para a API pública do Instituto Forest (institutoforest.org).',
+        en: 'Development of the forest-data Python client and open environmental data pipelines for the Instituto Forest public API (institutoforest.org).',
       },
-      href: 'https://github.com/julianopadua/forest-open-data-pipelines',
     },
   ],
 
