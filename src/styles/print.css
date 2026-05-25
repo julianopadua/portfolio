@@ -108,8 +108,14 @@
   }
 
   .cv-document--print .cv-header__photo {
+    display: block !important;
     width: 34mm !important;
     height: 34mm !important;
+    min-width: 34mm !important;
+    min-height: 34mm !important;
+    max-width: 34mm !important;
+    max-height: 34mm !important;
+    aspect-ratio: 1 / 1 !important;
     border-radius: 50% !important;
     object-fit: cover !important;
     object-position: center 28% !important;
@@ -129,6 +135,12 @@
 
   .cv-document--print .cv-header__headline {
     font-size: 10pt !important;
+  }
+
+  .cv-document--print .cv-header__contacts {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.2mm 3.5mm !important;
+    font-size: 7.6pt !important;
   }
 
   .cv-document--print .cv-summary {

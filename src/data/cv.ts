@@ -286,8 +286,8 @@ export const cvDocument: CvDocumentData = {
       organization: { pt: 'Instituto Forest', en: 'Instituto Forest' },
       organizationHref: 'https://institutoforest.org',
       description: {
-        pt: 'Desenvolvimento do cliente Python forest-data e pipelines de dados abertos ambientais para a API pública do Instituto Forest (institutoforest.org).',
-        en: 'Development of the forest-data Python client and open environmental data pipelines for the Instituto Forest public API (institutoforest.org).',
+        pt: 'Desenvolvimento do cliente Python forest-data e pipelines de dados abertos ambientais para a API pública do Instituto Forest (https://institutoforest.org).',
+        en: 'Development of the forest-data Python client and open environmental data pipelines for the Instituto Forest public API (https://institutoforest.org).',
       },
       href: 'https://github.com/julianopadua/forest-open-data-pipelines',
     },

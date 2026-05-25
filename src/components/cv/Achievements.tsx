@@ -30,11 +30,11 @@ export function Achievements({ items }: AchievementsProps) {
                   {item.organizationHref ? (
                     <a
                       href={item.organizationHref}
-                      className="cv-link cv-accent"
+                      className="cv-link cv-accent cv-link--url"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {pickLocalized(item.organization, locale)}
+                      {item.organizationHref}
                     </a>
                   ) : (
                     pickLocalized(item.organization, locale)

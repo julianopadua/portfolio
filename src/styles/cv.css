@@ -161,14 +161,14 @@
 .cv-header__contacts {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1mm 4mm;
-  font-size: 8.5pt;
+  gap: 1.5mm 4mm;
+  font-size: 8pt;
   color: #555555;
 }
 
 .cv-header__contact {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5mm;
   min-width: 0;
 }
@@ -182,14 +182,37 @@
   color: var(--cv-accent);
 }
 
+.cv-header__contact--url .cv-link--url {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.25;
+}
+
 .cv-header__contact-icon {
   flex-shrink: 0;
   color: var(--cv-accent);
 }
 
+.cv-header__brand-icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  object-fit: contain;
+  /* icons/pngs are light; darken for white CV background */
+  filter: brightness(0);
+  opacity: 0.72;
+}
+
 .cv-header__photo {
+  display: block;
+  flex-shrink: 0;
   width: 34mm;
   height: 34mm;
+  min-width: 34mm;
+  min-height: 34mm;
+  max-width: 34mm;
+  max-height: 34mm;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 28%;

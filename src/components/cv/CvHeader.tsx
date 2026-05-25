@@ -1,7 +1,13 @@
-import { Code2, Globe, Link, Mail, MapPin, Phone } from 'lucide-react'
+import { Globe, Mail, MapPin, Phone } from 'lucide-react'
 import type { CvProfile } from '../../data/types'
+import { publicAsset } from '../../lib/assets'
 import { pickLocalized } from '../../lib/localized'
 import { useLocale } from '../../i18n/useLocale'
+
+const brandIcons = {
+  github: publicAsset('icons/githubclaro.png'),
+  linkedin: publicAsset('icons/linkedinclaro.png'),
+} as const
 
 interface CvHeaderProps {
   profile: CvProfile
@@ -34,53 +40,58 @@ export function CvHeader({ profile }: CvHeaderProps) {
             <MapPin className="cv-header__contact-icon" size={12} aria-hidden />
             <span>{location}</span>
           </span>
-          <span className="cv-header__contact">
-            <Link className="cv-header__contact-icon" size={12} aria-hidden />
+          <span className="cv-header__contact cv-header__contact--url">
+            <img
+              src={brandIcons.linkedin}
+              alt=""
+              width={12}
+              height={12}
+              className="cv-header__brand-icon"
+              aria-hidden
+            />
             <a
               href={profile.linkedin}
-              className="cv-link"
+              className="cv-link cv-link--url"
               target="_blank"
               rel="noopener noreferrer"
-              title={profile.linkedin}
             >
-              LinkedIn
+              {profile.linkedin}
             </a>
           </span>
-          <span className="cv-header__contact">
-            <Code2 className="cv-header__contact-icon" size={12} aria-hidden />
+          <span className="cv-header__contact cv-header__contact--url">
+            <img
+              src={brandIcons.github}
+              alt=""
+              width={12}
+              height={12}
+              className="cv-header__brand-icon"
+              aria-hidden
+            />
             <a
               href={profile.github}
-              className="cv-link"
+              className="cv-link cv-link--url"
               target="_blank"
               rel="noopener noreferrer"
-              title={profile.github}
             >
-              GitHub
+              {profile.github}
             </a>
           </span>
           {profile.website && (
-            <span className="cv-header__contact">
+            <span className="cv-header__contact cv-header__contact--url">
               <Globe className="cv-header__contact-icon" size={12} aria-hidden />
               <a
                 href={profile.website}
-                className="cv-link"
+                className="cv-link cv-link--url"
                 target="_blank"
                 rel="noopener noreferrer"
-                title={profile.website}
               >
-                Portfolio
+                {profile.website}
               </a>
             </span>
           )}
         </div>
       </div>
-      <img
-        className="cv-header__photo"
-        src={profile.photoSrc}
-        alt=""
-        width={128}
-        height={128}
-      />
+      <img className="cv-header__photo" src={profile.photoSrc} alt="" decoding="sync" />
     </header>
   )
 }
