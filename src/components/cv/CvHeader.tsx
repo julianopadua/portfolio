@@ -1,13 +1,8 @@
 import { Globe, Mail, MapPin, Phone } from 'lucide-react'
 import type { CvProfile } from '../../data/types'
-import { publicAsset } from '../../lib/assets'
 import { pickLocalized } from '../../lib/localized'
 import { useLocale } from '../../i18n/useLocale'
-
-const brandIcons = {
-  github: publicAsset('icons/githubclaro.png'),
-  linkedin: publicAsset('icons/linkedinclaro.png'),
-} as const
+import { BrandIcon } from '../ui/BrandIcon'
 
 interface CvHeaderProps {
   profile: CvProfile
@@ -41,14 +36,7 @@ export function CvHeader({ profile }: CvHeaderProps) {
             <span>{location}</span>
           </span>
           <span className="cv-header__contact cv-header__contact--url">
-            <img
-              src={brandIcons.linkedin}
-              alt=""
-              width={12}
-              height={12}
-              className="cv-header__brand-icon"
-              aria-hidden
-            />
+            <BrandIcon brand="linkedin" size={12} className="cv-header__brand-icon" decorative />
             <a
               href={profile.linkedin}
               className="cv-link cv-link--url"
@@ -59,14 +47,7 @@ export function CvHeader({ profile }: CvHeaderProps) {
             </a>
           </span>
           <span className="cv-header__contact cv-header__contact--url">
-            <img
-              src={brandIcons.github}
-              alt=""
-              width={12}
-              height={12}
-              className="cv-header__brand-icon"
-              aria-hidden
-            />
+            <BrandIcon brand="github" size={12} className="cv-header__brand-icon" decorative />
             <a
               href={profile.github}
               className="cv-link cv-link--url"

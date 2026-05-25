@@ -3,12 +3,7 @@ import { profile } from '../../data/profile'
 import { publicAsset } from '../../lib/assets'
 import { pickLocalized } from '../../lib/localized'
 import { useLocale } from '../../i18n/useLocale'
-
-const socialIcons = {
-  github: publicAsset('icons/githubclaro.png'),
-  linkedin: publicAsset('icons/linkedinclaro.png'),
-  instagram: publicAsset('icons/instaclaro.png'),
-} as const
+import { BrandIcon } from '../ui/BrandIcon'
 
 export function Sidebar() {
   const { locale, t } = useLocale()
@@ -73,12 +68,11 @@ export function Sidebar() {
                 className="opacity-80 transition hover:opacity-100"
                 aria-label="GitHub"
               >
-                <img
-                  src={socialIcons.github}
-                  alt=""
-                  width={28}
-                  height={28}
-                  className="h-7 w-7 object-contain"
+                <BrandIcon
+                  brand="github"
+                  size={28}
+                  decorative
+                  className="h-7 w-7 text-[var(--color-muted)] transition-colors hover:text-[var(--color-ink)]"
                 />
               </a>
             </li>
@@ -90,12 +84,11 @@ export function Sidebar() {
                 className="opacity-80 transition hover:opacity-100"
                 aria-label="LinkedIn"
               >
-                <img
-                  src={socialIcons.linkedin}
-                  alt=""
-                  width={28}
-                  height={28}
-                  className="h-7 w-7 object-contain"
+                <BrandIcon
+                  brand="linkedin"
+                  size={28}
+                  decorative
+                  className="h-7 w-7 text-[var(--color-muted)] transition-colors hover:text-[var(--color-ink)]"
                 />
               </a>
             </li>
@@ -108,12 +101,11 @@ export function Sidebar() {
                   className="opacity-80 transition hover:opacity-100"
                   aria-label="Instagram"
                 >
-                  <img
-                    src={socialIcons.instagram}
-                    alt=""
-                    width={28}
-                    height={28}
-                    className="h-7 w-7 object-contain"
+                  <BrandIcon
+                    brand="instagram"
+                    size={28}
+                    decorative
+                    className="h-7 w-7 text-[var(--color-muted)] transition-colors hover:text-[var(--color-ink)]"
                   />
                 </a>
               </li>

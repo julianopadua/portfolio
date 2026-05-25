@@ -14,15 +14,7 @@ export function ExperienceBlock({ experiences }: ExperienceBlockProps) {
     <div>
       {experiences.map((exp) => (
         <article key={exp.id} className="cv-experience cv-avoid-break">
-          <h3 className="cv-experience__company">
-            {exp.href ? (
-              <a href={exp.href} className="cv-link" target="_blank" rel="noopener noreferrer">
-                {exp.company}
-              </a>
-            ) : (
-              exp.company
-            )}
-          </h3>
+          <h3 className="cv-experience__company">{exp.company}</h3>
           <div className="cv-experience__meta">
             <span className="cv-experience__meta-item">
               <Calendar size={11} aria-hidden />

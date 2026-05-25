@@ -16,18 +16,7 @@ export function EducationList({ items }: EducationListProps) {
         <article key={item.id} className="cv-edu-item cv-avoid-break">
           <p className="cv-edu-item__degree">{pickLocalized(item.degree, locale)}</p>
           <p className="cv-edu-item__institution">
-            {item.href ? (
-              <a
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cv-link cv-accent"
-              >
-                {pickLocalized(item.institution, locale)}
-              </a>
-            ) : (
-              pickLocalized(item.institution, locale)
-            )}
+            {pickLocalized(item.institution, locale)}
           </p>
           <div className="cv-edu-item__meta">
             <span className="cv-edu-item__meta-item">
