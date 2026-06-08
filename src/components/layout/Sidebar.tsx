@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 import { profile } from '../../data/profile'
 import { publicAsset } from '../../lib/assets'
 import { pickLocalized } from '../../lib/localized'
@@ -41,17 +41,6 @@ export function Sidebar() {
                 {profile.email}
               </a>
             </li>
-            {profile.phone && (
-              <li>
-                <a
-                  href={`tel:${profile.phone.replace(/\s/g, '')}`}
-                  className="inline-flex items-center gap-2 text-[var(--color-muted)] hover:text-[var(--color-ink)]"
-                >
-                  <Phone className="h-4 w-4" aria-hidden />
-                  {profile.phone}
-                </a>
-              </li>
-            )}
           </ul>
         </div>
 

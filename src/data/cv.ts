@@ -15,7 +15,7 @@ export const cvDocument: CvDocumentData = {
     },
     photoSrc: publicAsset('imgs/new-img.png'),
     email: profile.email,
-    phone: profile.phone,
+    phone: '+55 (34) 99911-9610',
     location: profile.location,
     linkedin: profile.links.linkedin,
     github: profile.links.github,

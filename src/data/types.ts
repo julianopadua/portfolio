@@ -94,7 +94,6 @@ export interface Profile {
     linkedin: string
     instagram?: string
   }
-  phone?: string
 }
 
 export interface CvProfile {

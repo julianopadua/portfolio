@@ -57,7 +57,7 @@ export const pdfCvDocument: PdfCvDocument = {
       en: 'Computer Engineering student at UFSCar, graduating in July 2026, with experience in fraud analytics, market intelligence, Python automation, data pipelines, and machine learning applied to real-world datasets. Currently working in a 100% English-speaking environment at InComm Payments, using Splunk, Accertify, KPIs, and Python automations to support fraud monitoring and operational analysis.',
     },
     email: profile.email,
-    phone: profile.phone ?? '',
+    phone: '+55 (34) 99911-9610',
     location: profile.location,
     linkedin: profile.links.linkedin,
     github: profile.links.github,

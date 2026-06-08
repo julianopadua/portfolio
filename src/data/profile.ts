@@ -25,7 +25,6 @@ export const profile: Profile = {
     en: 'São Carlos, SP, Brazil',
   },
   email: 'julianofpadua@gmail.com',
-  phone: '+55 (34) 99911-9610',
   links: {
     github: 'https://github.com/julianopadua',
     linkedin: 'https://www.linkedin.com/in/julianopadua/',
