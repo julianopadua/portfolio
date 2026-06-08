@@ -280,4 +280,23 @@ export const timelineEvents: TimelineEvent[] = [
     href: 'https://institutoforest.org',
     tags: ['open-data', 'environment', 'open-source'],
   },
+  {
+    id: 'cerrado-fire-preprint',
+    kind: 'publication',
+    start: '2026-06',
+    sortOrder: 16,
+    logo: 'icons/arXiv-logo.png',
+    displayPeriod: { pt: 'Jun 2026', en: 'Jun 2026' },
+    title: {
+      pt: 'Publiquei o pre-print da minha pesquisa em focos de incêndio no Cerrado brasileiro',
+      en: 'I published the pre-print of my research on fire hotspots in the Brazilian Cerrado',
+    },
+    organization: { pt: 'arXiv', en: 'arXiv' },
+    summary: {
+      pt: 'Benchmark retrospectivo de covariáveis espaçotemporais para detecção diária de focos ativos em Unidades de Conservação do Cerrado.',
+      en: 'Retrospective benchmark of spatiotemporal covariates for daily active-fire detection in Cerrado Conservation Units.',
+    },
+    href: 'https://arxiv.org/abs/2606.04170',
+    tags: ['machine-learning', 'cerrado', 'wildfire', 'research'],
+  },
 ]
