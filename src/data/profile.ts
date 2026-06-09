@@ -28,6 +28,6 @@ export const profile: Profile = {
   links: {
     github: 'https://github.com/julianopadua',
     linkedin: 'https://www.linkedin.com/in/julianopadua/',
-    instagram: 'https://www.instagram.com/_padua20/',
+    instagram: 'https://www.instagram.com/js.padua/',
   },
 }
