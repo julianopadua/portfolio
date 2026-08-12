@@ -299,4 +299,26 @@ export const timelineEvents: TimelineEvent[] = [
     href: 'https://arxiv.org/abs/2606.04170',
     tags: ['machine-learning', 'cerrado', 'wildfire', 'research'],
   },
+  {
+    id: 'ufscar-graduation',
+    kind: 'education',
+    start: '2026-07',
+    sortOrder: 17,
+    logo: 'icons/ufscar-logo.png',
+    displayPeriod: { pt: 'Jul 2026', en: 'Jul 2026' },
+    title: {
+      pt: 'Concluí meu bacharelado em Engenharia da Computação',
+      en: 'I completed my BSc in Computer Engineering',
+    },
+    organization: {
+      pt: 'Universidade Federal de São Carlos (UFSCar)',
+      en: 'Federal University of São Carlos (UFSCar)',
+    },
+    summary: {
+      pt: 'Graduação concluída no campus São Carlos da UFSCar.',
+      en: 'Graduated from the São Carlos campus at UFSCar.',
+    },
+    href: 'https://www.ufscar.br/',
+    tags: ['education', 'graduation'],
+  },
 ]

@@ -10,8 +10,8 @@ export const cvDocument: CvDocumentData = {
       en: 'Machine Learning Researcher | Fraud Business Analyst | Data & Environmental Intelligence',
     },
     summary: {
-      pt: 'Estudante de Engenharia da Computação com experiência em ciência de dados, análise de mercado e desenvolvimento de soluções orientadas a resultados. Atuo na interseção entre engenharia de software, machine learning, estatística e BI, com exposição a inteligência de mercado e prevenção a fraudes.',
-      en: 'Computer Engineering student with experience in data science, market analysis, and the development of results-oriented solutions. I work at the intersection of software engineering, machine learning, statistics, and BI, with exposure to market intelligence and fraud prevention.',
+      pt: 'Engenheiro de Computação formado pela UFSCar em julho de 2026, com experiência em ciência de dados, análise de mercado e desenvolvimento de soluções orientadas a resultados. Atuo na interseção entre engenharia de software, machine learning, estatística e BI, com exposição a inteligência de mercado e prevenção a fraudes.',
+      en: 'Computer Engineering graduate from UFSCar, completed in July 2026, with experience in data science, market analysis, and the development of results-oriented solutions. I work at the intersection of software engineering, machine learning, statistics, and BI, with exposure to market intelligence and fraud prevention.',
     },
     photoSrc: publicAsset('imgs/new-img.png'),
     email: profile.email,

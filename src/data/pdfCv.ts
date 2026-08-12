@@ -53,8 +53,8 @@ export const pdfCvDocument: PdfCvDocument = {
       en: 'AI & Data Automation Engineer | Python, ML, Fraud Analytics, Data Pipelines',
     },
     summary: {
-      pt: 'Estudante de Engenharia da Computação na UFSCar, com formação prevista para julho de 2026, experiência em análise de fraude, inteligência de mercado, automação em Python, pipelines de dados e machine learning aplicado a bases reais. Atuação atual em ambiente 100% em inglês na InComm Payments, usando Splunk, Accertify, KPIs e automações em Python para apoiar monitoramento de fraude e análise operacional.',
-      en: 'Computer Engineering student at UFSCar, graduating in July 2026, with experience in fraud analytics, market intelligence, Python automation, data pipelines, and machine learning applied to real-world datasets. Currently working in a 100% English-speaking environment at InComm Payments, using Splunk, Accertify, KPIs, and Python automations to support fraud monitoring and operational analysis.',
+      pt: 'Engenheiro de Computação formado pela UFSCar em julho de 2026, com experiência em análise de fraude, inteligência de mercado, automação em Python, pipelines de dados e machine learning aplicado a bases reais. Atuação atual em ambiente 100% em inglês na InComm Payments, usando Splunk, Accertify, KPIs e automações em Python para apoiar monitoramento de fraude e análise operacional.',
+      en: 'Computer Engineering graduate from UFSCar, completed in July 2026, with experience in fraud analytics, market intelligence, Python automation, data pipelines, and machine learning applied to real-world datasets. Currently working in a 100% English-speaking environment at InComm Payments, using Splunk, Accertify, KPIs, and Python automations to support fraud monitoring and operational analysis.',
     },
     email: profile.email,
     phone: '+55 (34) 99911-9610',
@@ -293,8 +293,8 @@ export const pdfCvDocument: PdfCvDocument = {
       period: { pt: 'Ago 2021 - Jul 2026', en: 'Aug 2021 - Jul 2026' },
       bullets: [
         {
-          pt: 'Formação prevista para julho de 2026.',
-          en: 'Expected graduation: July 2026.',
+          pt: 'Graduação concluída em julho de 2026.',
+          en: 'Graduated in July 2026.',
         },
       ],
     },

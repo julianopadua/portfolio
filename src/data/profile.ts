@@ -3,13 +3,13 @@ import type { Profile } from './types'
 export const profile: Profile = {
   name: 'Juliano Pádua',
   tagline: {
-    pt: 'Engenharia da Computação (UFSCar) · Estagiário em Fraud Analytics na InComm Payments',
-    en: 'Computer Engineering (UFSCar) · Fraud Analytics Intern at InComm Payments',
+    pt: 'Engenheiro de Computação pela UFSCar · Estagiário em Fraud Analytics na InComm Payments',
+    en: 'Computer Engineer from UFSCar · Fraud Analytics Intern at InComm Payments',
   },
   bio: [
     {
-      pt: 'Sou estudante de Engenharia da Computação na UFSCar, com experiência em ciência de dados, análise de mercado e desenvolvimento de soluções orientadas a resultados. Atuo na interseção entre engenharia de software, machine learning, estatística e BI, com exposição a inteligência de mercado e prevenção a fraudes.',
-      en: 'I am a Computer Engineering student at UFSCar with experience in data science, market analysis, and the development of results-oriented solutions. I work at the intersection of software engineering, machine learning, statistics, and BI, with exposure to market intelligence and fraud prevention.',
+      pt: 'Sou engenheiro de computação formado pela UFSCar em julho de 2026, com experiência em ciência de dados, análise de mercado e desenvolvimento de soluções orientadas a resultados. Atuo na interseção entre engenharia de software, machine learning, estatística e BI, com exposição a inteligência de mercado e prevenção a fraudes.',
+      en: 'I hold a BSc in Computer Engineering from UFSCar, completed in July 2026, with experience in data science, market analysis, and the development of results-oriented solutions. I work at the intersection of software engineering, machine learning, statistics, and BI, with exposure to market intelligence and fraud prevention.',
     },
     {
       pt: 'Na UFSCar, fui monitor de Introdução à Computação e tutor de Geometria Analítica. Defendi em mar/2026 meu TCC sobre previsão de focos de incêndio no Cerrado com machine learning. Hoje sou líder do projeto IntegraLab (Whirlpool + UFSCar). Além disso, sou membro do Grupo PANDA, atuando na Diretoria de Projetos e também como tutor de Redes Neurais.',
